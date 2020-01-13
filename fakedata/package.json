@@ -1,0 +1,18 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "createHis": "node createHis",
+    "createAttr": "node createAttribute",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": "*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
