@@ -37,43 +37,29 @@ var createAttribute = function (data) {
 };
 
 sourceArray = [
-  { objectId: "7d5deb1a-2bc8-41e6-bc85-6bdc70caf30c", min: 20, max: 100 }, // 冷卻水塔-1溫度設定值
   { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 20, max: 100 }, // 冷卻水塔-1停起控制
   { objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", min: 20, max: 100 }, // 冷卻水塔-1運轉狀態
-  { objectId: "4187e2b4-1440-4259-b5c6-8136e36307d9", min: 20, max: 100 }, // 冷卻水塔-2溫度設定值
-  { objectId: "0c19921b-9d35-472d-a3c3-35bf86ac917f", min: 20, max: 100 }, // 冷卻水塔-2停起控制
   { objectId: "38c69d3d-d5f8-47ff-a615-4b5b02f32380", min: 20, max: 100 }, // 冷卻水塔-2運轉狀態
-  { objectId: "d977ad08-4425-4c9f-9e0c-87aaf47638b8", min: 20, max: 100 }, // 冷卻水塔-3溫度設定值
-  { objectId: "ff5926fd-e946-4ee8-a570-d0c5c93e0e4a", min: 20, max: 100 }, // 冷卻水塔-3停起控制
   { objectId: "096c817c-766e-4cf1-b648-8a6514cd8f55", min: 20, max: 100 }, // 冷卻水塔-3運轉狀態
-  { objectId: "6545ad92-c3cb-4a01-a7b6-b8e47c27de07", min: 20, max: 100 }, // 冷卻馬達-1停起控制
   { objectId: "b48ddf73-c31d-4731-8047-83ad40e73464", min: 20, max: 100 }, // 冷卻馬達-1運轉狀態
   { objectId: "8b13dfea-a7fb-4404-88a5-b58f5a3e5822", min: 20, max: 100 }, // 冷卻馬達-1故障跳脫
-  { objectId: "aa0468d0-26fa-4d9c-aae5-196e6c3a3fb0", min: 20, max: 100 }, // 設備
   { objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c", min: 20, max: 100 }, // 冷卻馬達-2運轉狀態
   { objectId: "db3c6401-faff-4a7c-99b7-b2903980a098", min: 20, max: 100 }, // 冷卻馬達-2故障跳脫
-  { objectId: "acc7ffa8-5482-4f33-82c9-14fe6d7f841f", min: 20, max: 100 }, // 冷卻馬達-3停起控制
   { objectId: "5c951e24-69ea-4611-91fc-28e7a3239d9c", min: 20, max: 100 }, // 冷卻馬達-3運轉狀態
   { objectId: "ae4a5ad7-3cc2-4057-b27e-d71cab3aab0c", min: 20, max: 100 }, // 冷卻馬達-3故障跳脫
-  { objectId: "34b5a04e-a2a4-4c8e-a252-b7acf75eee14", min: 20, max: 100 }, // 冰水主機-1停起控制
   { objectId: "cefb7be2-4c60-41fb-b377-084001383493", min: 20, max: 100 }, // 冰水主機-1運轉狀態
   { objectId: "c4329169-3679-4f93-a695-8ed34f36f28d", min: 20, max: 100 }, // 冰水主機-1故障跳脫
-  { objectId: "72d857a8-ced2-423c-9e70-7febea4ba16e", min: 20, max: 100 }, // 冰水主機-2停起控制
   { objectId: "817c6b44-d048-43d9-b5c4-bfc13c1ad513", min: 20, max: 100 }, // 冰水主機-2運轉狀態
   { objectId: "ca4b7e86-26ff-43e2-b8b3-6f744103c5d9", min: 20, max: 100 }, // 冰水主機-2故障跳脫
   { objectId: "90af7071-c367-456b-a13d-5f04307be6a0", min: 20, max: 100 }, // 偵煙感測器狀態
-  { objectId: "ea8a812b-32de-4df0-b1b2-f746db7b8ff0", min: 20, max: 100 }, // 控制閥控制
   { objectId: "9ae8cf48-e9c8-4f27-bb2e-1451fc4c4e55", min: 20, max: 100 }, // 濾網差壓狀態
   { objectId: "41a6bad6-1b99-4752-ae67-75f77b4d900e", min: 20, max: 100 }, // 風差壓開關狀態
   { objectId: "f27cb6c3-f631-4f82-a23e-a21f18495fdb", min: 20, max: 100 }, // 變頻器狀態
   { objectId: "f4395f51-116d-4d38-a04d-5e432d07a5cf", min: 20, max: 100 }, // 風機過載跳脫
   { objectId: "74dab691-b48b-44d8-9675-7d5b01ca714e", min: 20, max: 100 }, // 風機運轉狀態
   { objectId: "17e73d9a-def8-4989-b3f5-6632a57825f1", min: 20, max: 100 }, // 手自動狀態
-  { objectId: "7150fabd-4fda-41f4-9463-4b6128be6cad", min: 20, max: 100 }, // 變頻器起停
   { objectId: "857e57da-dc8e-4793-8984-0b0d23815b34", min: 20, max: 100 }, // 保持式關閉
-  { objectId: "efa56d9c-5dea-45cc-8b17-402eccdd4c65", min: 20, max: 100 }, // 變頻器控制
   { objectId: "1556e2a4-e99f-452e-b9b9-9f8b15a69671", min: 20, max: 100 }, // 偵煙感測器狀態
-  { objectId: "0cc1e583-d283-4a48-af61-604bf594c622", min: 20, max: 100 }, // 控制閥控制
   { objectId: "9cf253ae-c663-47fa-996a-840cf96595ce", min: 20, max: 100 }, // 濾網差壓狀態
   { objectId: "45efca7a-5dd3-46b6-9d43-52b664336304", min: 20, max: 100 }, // 風差壓開關狀態
   { objectId: "b7e0cb71-31a7-4888-9551-e9ae99f1871c", min: 20, max: 100 }, // 變頻器狀態
@@ -81,7 +67,6 @@ sourceArray = [
   { objectId: "b9e4cc5e-ec88-4eb8-aedc-1e59107b81b1", min: 20, max: 100 }, // 風機運轉狀態
   { objectId: "411dfc0e-e8ec-48cd-85fe-890155e466af", min: 20, max: 100 }, // 手自動狀態
   { objectId: "e8331740-b9b3-48bd-9599-33553c05ce85", min: 20, max: 100 }, // 保持式關閉
-  { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 20, max: 100 }, // 變頻器控制
   { objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20", min: 20, max: 100 }, // ACBB1-故障狀態01
   { objectId: "f71e85ee-728f-4224-beae-3c14ffb3bcda", min: 20, max: 100 }, // ACBB1-跳脫狀態01
   { objectId: "ad0b8d4f-f212-4dfc-9fa0-e8326ed2444f", min: 20, max: 100 }, // ACBB1-啟停狀態01
@@ -127,10 +112,8 @@ sourceArray = [
   { objectId: "64c9e84b-7c8a-4153-a833-142f53ca34b4", min: 20, max: 100 }, // 冷卻水泵模組3-冷卻水泵-3頻率輸出
   { objectId: "2d66338e-6eb3-492e-8cf9-fa61836ead48", min: 20, max: 100 }, // 回風溫度值
   { objectId: "2c318c8b-77cd-4cbf-948c-941f15ef2e08", min: 20, max: 100 }, // 回風濕度值
-  { objectId: "7a8115a4-dd4c-4381-9c74-e2945e62b3b3", min: 20, max: 100 }, // 風門開度控制
   { objectId: "015951a5-116a-4f00-ab52-af4f7cf30ab4", min: 20, max: 100 }, // 回風溫度值
   { objectId: "28c77277-4989-46cc-8bc2-d4b3eef8f615", min: 20, max: 100 }, // 回風濕度值
-  { objectId: "5dfdc14e-d8c9-4a77-a14f-77590198b3bf", min: 20, max: 100 }, // 風門開度控制
   { objectId: "53402a68-06cd-43d7-b07d-b90844ed6f49", min: 20, max: 100 }, // ACBB1電表電壓V1
   { objectId: "d2825cd1-8f53-4d9b-9090-689294c73d32", min: 20, max: 100 }, // ACBB1電表電壓V2
   { objectId: "cbace30c-50c2-47fa-8a67-d5501726663c", min: 20, max: 100 }, // ACBB1電表電壓V3
