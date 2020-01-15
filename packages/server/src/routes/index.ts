@@ -144,7 +144,7 @@ router.post("/attribute", function (req, res) {
 });
 
 // Control
-router.post("api/historicals/:objectId/attributes", function (req, res) {
+router.post("/api/historicals/:objectId/attributes", function (req, res) {
   var objectId = req.params.objectId
   var value = req.body[0].value
   var Key = "Present_Value";
