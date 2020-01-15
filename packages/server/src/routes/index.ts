@@ -145,11 +145,10 @@ router.post("/attribute", function (req, res) {
 
 // Control
 router.post("api/historicals/:objectId/attributes", function (req, res) {
-  var objectId = req.query.objectId
+  var objectId = req.params.objectId
   var value = req.body[0].value
   var Key = "Present_Value";
   var Timestamp = Math.floor(Date.now() / 1000);
-  var data = req.body;
   Key = "Present_Value";
   client.hmset(
     objectId,
@@ -162,7 +161,7 @@ router.post("api/historicals/:objectId/attributes", function (req, res) {
     }
   );
 
-  res.status(200).json("created");
+  res.status(200).json("updated");
 });
 
 export const routes = router;
