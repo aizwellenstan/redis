@@ -143,4 +143,26 @@ router.post("/attribute", function (req, res) {
   res.status(200).json("created");
 });
 
+// Control
+router.post("/:objectId/attributes", function (req, res) {
+  var objectId = req.query.objectId
+  var value = req.body[0].value
+  var Key = "Present_Value";
+  var Timestamp = Math.floor(Date.now() / 1000);
+  var data = req.body;
+  Key = "Present_Value";
+  client.hmset(
+    objectId,
+    ["Key", Key, "Value", value, "Timestamp", Timestamp],
+    function (err, reply) {
+      if (err) {
+        // console.log(err);
+      }
+      // console.log(reply);
+    }
+  );
+
+  res.status(200).json("created");
+});
+
 export const routes = router;
