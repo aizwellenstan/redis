@@ -1,37 +1,9 @@
-# Refined-graphql
+# Refined-redis
+Tech: monogoDB, Redis
 
-#Get Author
-{
-authors{
-name
-age
-books{
-name
-genre
-}
-}
-}
 
-#Get Book
-{
-books{
-name
-genre
-}
-}
+#Start Server
+1. `npm start`
 
-#Add Author
-mutation {
-addAuthor(name: "test1", age: 38){
-name
-age
-}
-}
-
-#Add Book
-mutation {
-addBook(name: "test1_book", genre: "test1", authorId:"5e156d037eef1b6c79d0543b"){
-name
-genre
-}
-}
+#Start FakeData
+1. `cd fakedata && createHis`

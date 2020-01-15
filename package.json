@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node packages/server/src/main.ts",
-    "save": "ts-node packages/server/src/hisSave.ts"
+    "start": "ts-node packages/server/src/main.ts"
   },
   "author": "",
   "license": "ISC",
