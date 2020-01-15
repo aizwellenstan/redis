@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node packages/server/src/main.ts"
+    "start": "ts-node packages/server/src/main.ts",
+    "save": "ts-node packages/server/src/hisSave.ts"
   },
   "author": "",
   "license": "ISC",
@@ -19,8 +20,11 @@
     "@types/graphql": "^14.5.0",
     "@types/graphql-depth-limit": "^1.1.2",
     "@types/graphql-iso-date": "^3.3.3",
+    "@types/mongoose": "^5.5.41",
     "@types/node": "^12.11.7",
     "@types/pg": "^7.11.2",
+    "@types/redis": "^2.8.14",
+    "@types/request": "^2.48.4",
     "apollo": "^2.21.0",
     "apollo-link": "^1.2.12",
     "apollo-link-http": "^1.5.15",
@@ -36,8 +40,11 @@
     "graphql-iso-date": "^3.6.1",
     "i18next": "^19.0.0",
     "i18next-express-middleware": "^1.8.1",
+    "mongoose": "^5.8.7",
     "pg": "^7.12.1",
+    "redis": "^2.8.0",
     "reflect-metadata": "^0.1.13",
+    "request": "^2.88.0",
     "ts-node": "^8.3.0",
     "tsconfig-paths": "^3.8.0",
     "type-fest": "^0.8.1",

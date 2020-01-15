@@ -16,7 +16,9 @@ import { BIND_PORT } from "./config";
 // import { PerformerCron } from "./cron/performer";
 // import { CategoryCron } from "./cron/category";
 // import { createElasticsearchConnection } from "./elasticsearch";
-// import { routes } from "./routes";
+
+import { routes } from "./routes";
+import { initialdata, savedata } from "./hisSave"
 
 // const arts = require.resolve('../../arts');
 // const schema = require.resolve("../../schema");
@@ -35,9 +37,9 @@ import { BIND_PORT } from "./config";
    */
   // const clientStatic = path.resolve(client, '../../static');
 
-  //   const typeDefs = await fs.readFile(schema, "utf-8").then(gql);
+  // const typeDefs = await fs.readFile(schema, "utf-8").then(gql);
   //   const connection = await createConnection();
-  //   const elasticsearch = await createElasticsearchConnection();
+  // const elasticsearch = await createElasticsearchConnection();
 
   // Crons
   //   new PerformerCron(connection);
@@ -45,26 +47,30 @@ import { BIND_PORT } from "./config";
   //   new CategoryCron(connection);
 
   // Apollo
-  //   const apollo = new ApolloServer({
-  //     typeDefs,
-  //     resolvers,
-  //     context: () => createContext(connection, elasticsearch),
-  //     validationRules: [depthLimit(5)]
-  //   });
+  // const apollo = new ApolloServer({
+  // typeDefs
+  // resolvers,
+  // context: () => createContext(connection, elasticsearch),
+  // validationRules: [depthLimit(5)]
+  // });
 
   // Express
-  const app = express().use(cors());
-  // .use(express.static(artsStatic))
-  // .use(express.static(clientStatic))
-  // .use(i18nextMiddleware.handle(createI18n()))
-  // .use(apollo.getMiddleware({ path: "/graphql" }))
-  // .use(routes);
+  const app = express()
+    .use(cors())
+    // .use(express.static(artsStatic))
+    // .use(express.static(clientStatic))
+    // .use(i18nextMiddleware.handle(createI18n()))
+    // .use(apollo.getMiddleware({ path: "/graphql" }));
+    .use(routes);
 
   app.listen({ port: BIND_PORT }, () => {
     // eslint-disable-next-line no-console
     console.log(
       "🎉 GraphQL server is running at " +
-        `http://localhost:${BIND_PORT}/graphql`
+      `http://localhost:${BIND_PORT}/graphql`
     );
   });
+
+  setInterval(function () { initialdata() }, 1000)
+  setInterval(function () { savedata() }, 1000)
 })();
