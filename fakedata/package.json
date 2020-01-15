@@ -7,6 +7,7 @@
     "start": "node index",
     "createHis": "node createHis",
     "createAttr": "node createAttribute",
+    "createAlarm": "node createAlarm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
