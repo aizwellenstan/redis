@@ -146,7 +146,7 @@ router.post("/attribute", function (req, res) {
 // Control
 router.post("/api/historicals/:objectId/attributes", function (req, res) {
   var objectId = req.params.objectId
-  var value = req.body[0].value
+  var value = req.body[0].Value
   var Key = "Present_Value";
   var Timestamp = Math.floor(Date.now() / 1000);
   Key = "Present_Value";
