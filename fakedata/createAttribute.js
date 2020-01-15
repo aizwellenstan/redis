@@ -15,7 +15,7 @@ function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-var createAttribute = function(data) {
+var createAttribute = function (data) {
   async function resolveSample() {
     attribute.uri = URI;
     array = [];
@@ -31,7 +31,7 @@ var createAttribute = function(data) {
   }
 
   resolveSample().then(
-    request.post(attribute, function(error, response, body) {}),
+    request.post(attribute, function (error, response, body) { }),
     console.log(JSON.stringify(attribute))
   );
 };
@@ -80,7 +80,6 @@ sourceArray = [
   { objectId: "853b9151-a4aa-4f00-861c-b5a1b46cce6f", min: 20, max: 100 }, // 風機過載跳脫
   { objectId: "b9e4cc5e-ec88-4eb8-aedc-1e59107b81b1", min: 20, max: 100 }, // 風機運轉狀態
   { objectId: "411dfc0e-e8ec-48cd-85fe-890155e466af", min: 20, max: 100 }, // 手自動狀態
-  { objectId: "e7288245-91be-4312-aa54-e133e08741a6", min: 20, max: 100 }, // 變頻器起停
   { objectId: "e8331740-b9b3-48bd-9599-33553c05ce85", min: 20, max: 100 }, // 保持式關閉
   { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 20, max: 100 }, // 變頻器控制
   { objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20", min: 20, max: 100 }, // ACBB1-故障狀態01
@@ -163,6 +162,6 @@ sourceArray = [
   { objectId: "fb6f0fdf-a5e2-4620-8870-1993362b2919", min: 20, max: 100 } // CO 感測器3
 ];
 
-setInterval(function() {
+setInterval(function () {
   createAttribute(sourceArray);
 }, 1000);
