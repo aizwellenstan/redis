@@ -36,7 +36,8 @@ var createAttribute = function (data) {
   );
 };
 
-controlSourceArray = [
+nocahngeArray = [
+  // control
   { objectId: "7d5deb1a-2bc8-41e6-bc85-6bdc70caf30c", min: 9, max: 18 },
   { objectId: "ff5926fd-e946-4ee8-a570-d0c5c93e0e4a", min: 1, max: 1 },
   { objectId: "e7288245-91be-4312-aa54-e133e08741a6", min: 1, max: 1 },
@@ -55,56 +56,58 @@ controlSourceArray = [
   { objectId: "efa56d9c-5dea-45cc-8b17-402eccdd4c65", min: 1, max: 1 },
   { objectId: "5dfdc14e-d8c9-4a77-a14f-77590198b3bf", min: 37.5, max: 75 },
   { objectId: "0cc1e583-d283-4a48-af61-604bf594c622", min: 1, max: 1 },
-  { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 1, max: 1 }
+  { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 1, max: 1 },
+
+  // no control
+  { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 1, max: 1 },
+  { objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", min: 0, max: 0 },
+  { objectId: "38c69d3d-d5f8-47ff-a615-4b5b02f32380", min: 1, max: 1 },
+  { objectId: "096c817c-766e-4cf1-b648-8a6514cd8f55", min: 1, max: 1 },
+  { objectId: "b48ddf73-c31d-4731-8047-83ad40e73464", min: 0, max: 0 },
+  { objectId: "8b13dfea-a7fb-4404-88a5-b58f5a3e5822", min: 1, max: 1 },
+  { objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c", min: 1, max: 1 },
+  { objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c", min: 1, max: 1 },
+  { objectId: "5c951e24-69ea-4611-91fc-28e7a3239d9c", min: 1, max: 1 },
+  { objectId: "ae4a5ad7-3cc2-4057-b27e-d71cab3aab0c", min: 1, max: 1 },
+  { objectId: "cefb7be2-4c60-41fb-b377-084001383493", min: 1, max: 1 },
+  { objectId: "c4329169-3679-4f93-a695-8ed34f36f28d", min: 1, max: 1 },
+  { objectId: "817c6b44-d048-43d9-b5c4-bfc13c1ad513", min: 1, max: 1 },
+  { objectId: "ca4b7e86-26ff-43e2-b8b3-6f744103c5d9", min: 1, max: 1 },
+  { objectId: "90af7071-c367-456b-a13d-5f04307be6a0", min: 1, max: 1 },
+  { objectId: "9ae8cf48-e9c8-4f27-bb2e-1451fc4c4e55", min: 1, max: 1 },
+  { objectId: "41a6bad6-1b99-4752-ae67-75f77b4d900e", min: 1, max: 1 },
+  { objectId: "f27cb6c3-f631-4f82-a23e-a21f18495fdb", min: 1, max: 1 },
+  { objectId: "f4395f51-116d-4d38-a04d-5e432d07a5cf", min: 1, max: 1 },
+  { objectId: "74dab691-b48b-44d8-9675-7d5b01ca714e", min: 1, max: 1 },
+  { objectId: "17e73d9a-def8-4989-b3f5-6632a57825f1", min: 1, max: 1 },
+  { objectId: "857e57da-dc8e-4793-8984-0b0d23815b34", min: 1, max: 1 },
+  { objectId: "1556e2a4-e99f-452e-b9b9-9f8b15a69671", min: 1, max: 1 },
+  { objectId: "9cf253ae-c663-47fa-996a-840cf96595ce", min: 1, max: 1 },
+  { objectId: "45efca7a-5dd3-46b6-9d43-52b664336304", min: 1, max: 1 },
+  { objectId: "b7e0cb71-31a7-4888-9551-e9ae99f1871c", min: 1, max: 1 },
+  { objectId: "853b9151-a4aa-4f00-861c-b5a1b46cce6f", min: 1, max: 1 },
+  { objectId: "b9e4cc5e-ec88-4eb8-aedc-1e59107b81b1", min: 1, max: 1 },
+  { objectId: "411dfc0e-e8ec-48cd-85fe-890155e466af", min: 1, max: 1 },
+  { objectId: "e8331740-b9b3-48bd-9599-33553c05ce85", min: 1, max: 1 },
+  { objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20", min: 1, max: 1 },
+  { objectId: "f71e85ee-728f-4224-beae-3c14ffb3bcda", min: 0, max: 0 },
+  { objectId: "ad0b8d4f-f212-4dfc-9fa0-e8326ed2444f", min: 1, max: 1 },
+  { objectId: "f7c457be-eaf3-46e5-8f80-1978771192e8", min: 1, max: 1 },
+  { objectId: "951da7c3-5b23-4af3-887f-7480ed53e87c", min: 1, max: 1 },
+  { objectId: "2483c978-000b-497f-8cce-595ba00effb7", min: 1, max: 1 },
+  { objectId: "963c61a1-e1e6-4028-9142-8160e0534dd0", min: 1, max: 1 },
+  { objectId: "85d74bab-753e-4e21-a895-84af4bf9f493", min: 1, max: 1 },
+  { objectId: "573b917e-e282-47a9-a2c9-33b9616aed98", min: 1, max: 1 },
+  { objectId: "9d7387e2-5694-4fbe-99ea-d7e4381b5f44", min: 1, max: 1 },
+  { objectId: "8a649c92-ad15-4c11-a05a-e49d98e49ae5", min: 1, max: 1 },
+  { objectId: "399b8447-7977-43a7-bc32-708f8dd2337b", min: 1, max: 1 },
+  { objectId: "2a8065d9-d967-48c3-80c6-ffc178985691", min: 1, max: 1 },
+  { objectId: "79904457-a1fa-48b8-81c4-76f68b17eaab", min: 1, max: 1 },
+  { objectId: "05509524-a1dd-48b6-8cea-e00b57eff5de", min: 1, max: 1 },
+  { objectId: "f6698ca0-0a92-434c-8eef-ac2581025441", min: 1, max: 1 },
 ]
 
-sourceArray = [
-  { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 20, max: 100 }, // 冷卻水塔-1停起控制
-  { objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", min: 20, max: 100 }, // 冷卻水塔-1運轉狀態
-  { objectId: "38c69d3d-d5f8-47ff-a615-4b5b02f32380", min: 20, max: 100 }, // 冷卻水塔-2運轉狀態
-  { objectId: "096c817c-766e-4cf1-b648-8a6514cd8f55", min: 20, max: 100 }, // 冷卻水塔-3運轉狀態
-  { objectId: "b48ddf73-c31d-4731-8047-83ad40e73464", min: 20, max: 100 }, // 冷卻馬達-1運轉狀態
-  { objectId: "8b13dfea-a7fb-4404-88a5-b58f5a3e5822", min: 20, max: 100 }, // 冷卻馬達-1故障跳脫
-  { objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c", min: 20, max: 100 }, // 冷卻馬達-2運轉狀態
-  { objectId: "db3c6401-faff-4a7c-99b7-b2903980a098", min: 20, max: 100 }, // 冷卻馬達-2故障跳脫
-  { objectId: "5c951e24-69ea-4611-91fc-28e7a3239d9c", min: 20, max: 100 }, // 冷卻馬達-3運轉狀態
-  { objectId: "ae4a5ad7-3cc2-4057-b27e-d71cab3aab0c", min: 20, max: 100 }, // 冷卻馬達-3故障跳脫
-  { objectId: "cefb7be2-4c60-41fb-b377-084001383493", min: 20, max: 100 }, // 冰水主機-1運轉狀態
-  { objectId: "c4329169-3679-4f93-a695-8ed34f36f28d", min: 20, max: 100 }, // 冰水主機-1故障跳脫
-  { objectId: "817c6b44-d048-43d9-b5c4-bfc13c1ad513", min: 20, max: 100 }, // 冰水主機-2運轉狀態
-  { objectId: "ca4b7e86-26ff-43e2-b8b3-6f744103c5d9", min: 20, max: 100 }, // 冰水主機-2故障跳脫
-  { objectId: "90af7071-c367-456b-a13d-5f04307be6a0", min: 20, max: 100 }, // 偵煙感測器狀態
-  { objectId: "9ae8cf48-e9c8-4f27-bb2e-1451fc4c4e55", min: 20, max: 100 }, // 濾網差壓狀態
-  { objectId: "41a6bad6-1b99-4752-ae67-75f77b4d900e", min: 20, max: 100 }, // 風差壓開關狀態
-  { objectId: "f27cb6c3-f631-4f82-a23e-a21f18495fdb", min: 20, max: 100 }, // 變頻器狀態
-  { objectId: "f4395f51-116d-4d38-a04d-5e432d07a5cf", min: 20, max: 100 }, // 風機過載跳脫
-  { objectId: "74dab691-b48b-44d8-9675-7d5b01ca714e", min: 20, max: 100 }, // 風機運轉狀態
-  { objectId: "17e73d9a-def8-4989-b3f5-6632a57825f1", min: 20, max: 100 }, // 手自動狀態
-  { objectId: "857e57da-dc8e-4793-8984-0b0d23815b34", min: 20, max: 100 }, // 保持式關閉
-  { objectId: "1556e2a4-e99f-452e-b9b9-9f8b15a69671", min: 20, max: 100 }, // 偵煙感測器狀態
-  { objectId: "9cf253ae-c663-47fa-996a-840cf96595ce", min: 20, max: 100 }, // 濾網差壓狀態
-  { objectId: "45efca7a-5dd3-46b6-9d43-52b664336304", min: 20, max: 100 }, // 風差壓開關狀態
-  { objectId: "b7e0cb71-31a7-4888-9551-e9ae99f1871c", min: 20, max: 100 }, // 變頻器狀態
-  { objectId: "853b9151-a4aa-4f00-861c-b5a1b46cce6f", min: 20, max: 100 }, // 風機過載跳脫
-  { objectId: "b9e4cc5e-ec88-4eb8-aedc-1e59107b81b1", min: 20, max: 100 }, // 風機運轉狀態
-  { objectId: "411dfc0e-e8ec-48cd-85fe-890155e466af", min: 20, max: 100 }, // 手自動狀態
-  { objectId: "e8331740-b9b3-48bd-9599-33553c05ce85", min: 20, max: 100 }, // 保持式關閉
-  { objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20", min: 20, max: 100 }, // ACBB1-故障狀態01
-  { objectId: "f71e85ee-728f-4224-beae-3c14ffb3bcda", min: 20, max: 100 }, // ACBB1-跳脫狀態01
-  { objectId: "ad0b8d4f-f212-4dfc-9fa0-e8326ed2444f", min: 20, max: 100 }, // ACBB1-啟停狀態01
-  { objectId: "f7c457be-eaf3-46e5-8f80-1978771192e8", min: 20, max: 100 }, // ACBB2-故障狀態02
-  { objectId: "951da7c3-5b23-4af3-887f-7480ed53e87c", min: 20, max: 100 }, // ACBB2-跳脫狀態02
-  { objectId: "2483c978-000b-497f-8cce-595ba00effb7", min: 20, max: 100 }, // ACBB2-啟停狀態02
-  { objectId: "963c61a1-e1e6-4028-9142-8160e0534dd0", min: 20, max: 100 }, // 發電機啟停狀態
-  { objectId: "85d74bab-753e-4e21-a895-84af4bf9f493", min: 20, max: 100 }, // 發電機啟停控制
-  { objectId: "573b917e-e282-47a9-a2c9-33b9616aed98", min: 20, max: 100 }, // 泵浦故障狀態03
-  { objectId: "9d7387e2-5694-4fbe-99ea-d7e4381b5f44", min: 20, max: 100 }, // 泵浦跳脫狀態03
-  { objectId: "8a649c92-ad15-4c11-a05a-e49d98e49ae5", min: 20, max: 100 }, // 泵浦啟停狀態03
-  { objectId: "399b8447-7977-43a7-bc32-708f8dd2337b", min: 20, max: 100 }, // 泵浦故障狀態04
-  { objectId: "2a8065d9-d967-48c3-80c6-ffc178985691", min: 20, max: 100 }, // 泵浦跳脫狀態04
-  { objectId: "79904457-a1fa-48b8-81c4-76f68b17eaab", min: 20, max: 100 }, // 泵浦啟停狀態04
-  { objectId: "05509524-a1dd-48b6-8cea-e00b57eff5de", min: 20, max: 100 }, // 集水區高水位sensor1
-  { objectId: "f6698ca0-0a92-434c-8eef-ac2581025441", min: 20, max: 100 }, // 集水區低水位sensor1
+changeArray = [
   { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 20, max: 100 }, // 冷卻水塔-1回水溫度
   { objectId: "be3d2034-9116-453b-b76f-fdcad1e11125", min: 20, max: 100 }, // 冷卻水塔模組1-外氣溫度
   { objectId: "1036c4fb-da99-405a-8240-18f274011c63", min: 20, max: 100 }, // 冷卻水塔模組1-外氣濕度
@@ -167,8 +170,8 @@ sourceArray = [
   { objectId: "fb6f0fdf-a5e2-4620-8870-1993362b2919", min: 20, max: 100 } // CO 感測器3
 ];
 
-createAttribute(controlSourceArray)
+createAttribute(nocahngeArray)
 
 setInterval(function () {
-  createAttribute(sourceArray);
+  createAttribute(changeArray);
 }, 1000);
