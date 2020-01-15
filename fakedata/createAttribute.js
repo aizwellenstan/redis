@@ -36,6 +36,28 @@ var createAttribute = function (data) {
   );
 };
 
+controlSourceArray = [
+  { objectId: "7d5deb1a-2bc8-41e6-bc85-6bdc70caf30c", min: 1, max: 1 },
+  { objectId: "ff5926fd-e946-4ee8-a570-d0c5c93e0e4a", min: 1, max: 1 },
+  { objectId: "e7288245-91be-4312-aa54-e133e08741a6", min: 1, max: 1 },
+  { objectId: "7150fabd-4fda-41f4-9463-4b6128be6cad", min: 1, max: 1 },
+  { objectId: "fe26fcf5-baba-4a0e-8889-87552c305a9d", min: 1, max: 1 },
+  { objectId: "4187e2b4-1440-4259-b5c6-8136e36307d9", min: 1, max: 1 },
+  { objectId: "6545ad92-c3cb-4a01-a7b6-b8e47c27de07", min: 1, max: 1 },
+  { objectId: "aa0468d0-26fa-4d9c-aae5-196e6c3a3fb0", min: 1, max: 1 },
+  { objectId: "acc7ffa8-5482-4f33-82c9-14fe6d7f841f", min: 1, max: 1 },
+  { objectId: "34b5a04e-a2a4-4c8e-a252-b7acf75eee14", min: 1, max: 1 },
+  { objectId: "0c19921b-9d35-472d-a3c3-35bf86ac917f", min: 1, max: 1 },
+  { objectId: "d977ad08-4425-4c9f-9e0c-87aaf47638b8", min: 1, max: 1 },
+  { objectId: "7a8115a4-dd4c-4381-9c74-e2945e62b3b3", min: 1, max: 1 },
+  { objectId: "ea8a812b-32de-4df0-b1b2-f746db7b8ff0", min: 1, max: 1 },
+  { objectId: "72d857a8-ced2-423c-9e70-7febea4ba16e", min: 1, max: 1 },
+  { objectId: "efa56d9c-5dea-45cc-8b17-402eccdd4c65", min: 1, max: 1 },
+  { objectId: "5dfdc14e-d8c9-4a77-a14f-77590198b3bf", min: 1, max: 1 },
+  { objectId: "0cc1e583-d283-4a48-af61-604bf594c622", min: 1, max: 1 },
+  { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 1, max: 1 }
+]
+
 sourceArray = [
   { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 20, max: 100 }, // 冷卻水塔-1停起控制
   { objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", min: 20, max: 100 }, // 冷卻水塔-1運轉狀態
@@ -144,6 +166,8 @@ sourceArray = [
   { objectId: "1e243a9a-2bff-43c4-94fe-cf0205b12cb3", min: 20, max: 100 }, // CO 感測器2
   { objectId: "fb6f0fdf-a5e2-4620-8870-1993362b2919", min: 20, max: 100 } // CO 感測器3
 ];
+
+createAttribute(controlSourceArray)
 
 setInterval(function () {
   createAttribute(sourceArray);
