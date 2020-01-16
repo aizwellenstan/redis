@@ -93,9 +93,9 @@ router.get("/historical", function (req, res) {
             var data = return_dataset
 
             for (var j = 0; j < data.length; j++) {
-              data[j].ObjectId = data[j].key
+              data[j].ObjectData.ObjectId = data[j].key
               delete data[j].key
-              data[j].Attributes = [
+              data[j].ObjectData.Attributes = [
                 {
                   "Key": data[j].value.Key,
                   "Value": data[j].value.Value,

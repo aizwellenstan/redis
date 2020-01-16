@@ -38,7 +38,7 @@ var createAttribute = function (data) {
 
 nocahngeArray = [
   // control
-  { objectId: "7d5deb1a-2bc8-41e6-bc85-6bdc70caf30c", min: 9, max: 18 },
+  { objectId: "7d5deb1a-2bc8-41e6-bc85-6bdc70caf30c", min: 9, max: 18 }, // 冷卻水塔-1溫度設定值
   { objectId: "ff5926fd-e946-4ee8-a570-d0c5c93e0e4a", min: 1, max: 1 },
   { objectId: "e7288245-91be-4312-aa54-e133e08741a6", min: 1, max: 1 },
   { objectId: "7150fabd-4fda-41f4-9463-4b6128be6cad", min: 1, max: 1 },
@@ -59,7 +59,6 @@ nocahngeArray = [
   { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 1, max: 1 },
 
   // no control
-  { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 1, max: 1 },
   { objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", min: 0, max: 0 },
   { objectId: "38c69d3d-d5f8-47ff-a615-4b5b02f32380", min: 1, max: 1 },
   { objectId: "096c817c-766e-4cf1-b648-8a6514cd8f55", min: 1, max: 1 },
@@ -108,7 +107,7 @@ nocahngeArray = [
 ]
 
 changeArray = [
-  { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 20, max: 100 }, // 冷卻水塔-1回水溫度
+  { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 11.25, max: 22.5 }, // 冷卻水塔-1回水溫度
   { objectId: "be3d2034-9116-453b-b76f-fdcad1e11125", min: 20, max: 100 }, // 冷卻水塔模組1-外氣溫度
   { objectId: "1036c4fb-da99-405a-8240-18f274011c63", min: 20, max: 100 }, // 冷卻水塔模組1-外氣濕度
   { objectId: "474308ae-c944-448c-9b3a-51b1c2694b35", min: 20, max: 100 }, // 冷卻水塔模組1-外氣露點
@@ -166,6 +165,7 @@ changeArray = [
   { objectId: "07a59ed6-cef8-4c43-8626-66d8df59c6a9", min: 20, max: 100 }, // 發電機3電功率KW
   { objectId: "4a01b9a3-c68b-45d2-a3ea-17b3b3e31e4f", min: 20, max: 100 }, // 發電機3功因Pf
   { objectId: "bea053a1-6be9-44d8-8762-33812b358d24", min: 20, max: 100 }, // 發電機3頻率Hz
+  { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 51, max: 60 }, // CO 感測器1
   { objectId: "1e243a9a-2bff-43c4-94fe-cf0205b12cb3", min: 20, max: 100 }, // CO 感測器2
   { objectId: "fb6f0fdf-a5e2-4620-8870-1993362b2919", min: 20, max: 100 } // CO 感測器3
 ];
