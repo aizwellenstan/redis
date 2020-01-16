@@ -13,7 +13,7 @@ var fakeAlarm = {
   json: [
     {
       objectId: "f9ad22d7-4657-408b-95db-08147c619ae7",
-      DisplayObjectId: "f9ad22d7-4657-408b-95db-08147c619ae7",
+      DisplayObjectId: "environment_co100101", //CO感測器01
       AlarmCategory: "Medium",
       AlarmFunction: "AlarmNeedAckNoReset",
       TriggerLogic: ">",
@@ -26,7 +26,7 @@ var fakeAlarm = {
     },
     {
       objectId: "b48ddf73-c31d-4731-8047-83ad40e73464",
-      DisplayObjectId: "1caa6a0e-fd7e-46d0-9f89-082bb96c36a6",
+      DisplayObjectId: "environment_chillermotor000201", //冷卻水泵01 
       AlarmCategory: "Low",
       AlarmFunction: "AlarmNoAckNoReset",
       TriggerLogic: "=",
@@ -39,7 +39,7 @@ var fakeAlarm = {
     },
     {
       objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20",
-      DisplayObjectId: "d5a98ad0-3cf9-4952-88fc-8a4aaba25aee",
+      DisplayObjectId: "energy_volltagemchine000301", //電箱01 
       AlarmCategory: "Emergency",
       AlarmFunction: "AlarmNeedAckNoReset",
       TriggerLogic: "=",
@@ -52,7 +52,7 @@ var fakeAlarm = {
     },
     {
       objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef",
-      DisplayObjectId: "415cb5b8-3160-4956-b255-cc263b483df8",
+      DisplayObjectId: "environment_chillerwatertank000301", //冷水箱01 
       AlarmCategory: "Medium",
       AlarmFunction: "AlarmNeedAckNoReset",
       TriggerLogic: "=",
@@ -65,7 +65,7 @@ var fakeAlarm = {
     },
     {
       objectId: "8b13dfea-a7fb-4404-88a5-b58f5a3e5822",
-      DisplayObjectId: "1caa6a0e-fd7e-46d0-9f89-082bb96c36a6",
+      DisplayObjectId: "environment_chillermotor000201", //冷卻水泵01 
       AlarmCategory: "High",
       AlarmFunction: "AlarmNeedAckNeedReset",
       TriggerLogic: "=",
@@ -76,19 +76,6 @@ var fakeAlarm = {
       AlarmMessageJapenese: "冷卻馬達-1故障跳脫",
       IsOpenTrigger: "1"
     },
-    {
-      objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20",
-      DisplayObjectId: "a8685f65-8ff6-47a5-a888-c5c4ce5e3998",
-      AlarmCategory: "Emergency",
-      AlarmFunction: "AlarmNeedAckNeedReset",
-      TriggerLogic: "=",
-      trigger_value: "1",
-      AlarmMessage: "ACBB1-故障",
-      AlarmMessageEnglish: "ACBB1-故障",
-      AlarmMessageSpanish: "ACBB1-故障",
-      AlarmMessageJapenese: "ACBB1-故障",
-      IsOpenTrigger: "1"
-    }
   ]
 };
 
@@ -148,4 +135,3 @@ setInterval(function () {
   ddosAlarm_His("8b13dfea-a7fb-4404-88a5-b58f5a3e5822", 1, 1); // 冷卻馬達-1故障跳脫
   ddosAlarm_His("e10f9d11-13b5-4694-ba12-cec88222cf20", 1, 1); // ACBB1-故障狀態01
 }, 5000);
-
