@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --max-old-space-size=4096 -- ts-node packages/server/src/main.ts"
+    "start": "node --max-old-space-size=4096 node_modules/.bin/ts-node packages/server/src/main.ts"
   },
   "author": "",
   "license": "ISC",
