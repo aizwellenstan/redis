@@ -146,10 +146,9 @@ router.get("/alarmhistorical", function (req, res) {
             var data = return_dataset
 
             for (var j = 0; j < data.length; j++) {
-              data[j].ObjectData = {
-                ObjectId: data[j].key,
-                Value: data[j].value.Value,
-              }
+              data[j].ObjectId= data[j].key,
+              data[j].Value= data[j].value.Value,
+              
               delete data[j].key
               delete data[j].value
             }
