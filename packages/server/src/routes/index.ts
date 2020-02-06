@@ -124,6 +124,49 @@ router.get("/historical", function (req, res) {
   }
 });
 
+router.get("/alarmhistorical", function (req, res) {
+  var from = ""
+  req.query.from ? (from = req.query.from) : (from = "");
+
+  if (from == "") {
+    var return_dataset: Array<any> = [];
+    client.keys('*', function (err, log_list) {
+      var keys = Object.keys(log_list);
+      var i = 0;
+
+      keys.forEach(function (l: any) {
+        client.hgetall(log_list[l], function (e, o) {
+          i++;
+          if (e) { console.log(e) } else {
+            var temp_data = { 'key': log_list[l], 'value': o };
+            return_dataset.push(temp_data);
+          }
+
+          if (i == keys.length) {
+            var data = return_dataset
+
+            for (var j = 0; j < data.length; j++) {
+              data[j].ObjectData = {
+                ObjectId: data[j].key,
+                Value: data[j].value.Value,
+              }
+              delete data[j].key
+              delete data[j].value
+            }
+            res.json(data);
+          }
+        });
+      });
+    });
+  }
+  else {
+    getCourses(from).then(data => {
+      data = JSON.parse(data[0].body)
+      res.json(data)
+    })
+  }
+});
+
 // Attribute Create
 router.post("/attribute", function (req, res) {
   var Key = "Present_Value";
