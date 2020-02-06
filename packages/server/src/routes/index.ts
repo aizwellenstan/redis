@@ -104,6 +104,8 @@ router.get("/historical", function (req, res) {
                     }
                   ]
                 }
+              }else{
+                j--
               }
               delete data[j].key
               delete data[j].value
@@ -151,6 +153,8 @@ router.get("/alarmhistorical", function (req, res) {
               if (data[j].key!=="unacked"){
                 data[j].ObjectId= data[j].key,
                 data[j].Value= data[j].value.Value
+              }else{
+                j--
               }
               delete data[j].key
               delete data[j].value
