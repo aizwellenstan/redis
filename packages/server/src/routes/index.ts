@@ -150,7 +150,9 @@ router.get("/alarmhistorical", function (req, res) {
             var data = return_dataset
 
             for (var j = 0; j < data.length; j++) {
-              data.push( `${data[j].key}: ${data[j].value.Value},`)
+              data[j].key = data[j].value.Value
+              delete data[j].key
+              delete data[j].value
             }
             res.json(data);
           }
