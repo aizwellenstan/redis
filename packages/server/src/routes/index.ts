@@ -86,7 +86,9 @@ router.get("/historical", function (req, res) {
           i++;
           if (e) { console.log(e) } else {
             var temp_data = { 'key': log_list[l], 'value': o };
-            return_dataset.push(temp_data);
+            if(log_list[l]!=="unacked"){
+              return_dataset.push(temp_data);
+            }
           }
 
           if (i == keys.length) {
@@ -139,7 +141,9 @@ router.get("/alarmhistorical", function (req, res) {
           i++;
           if (e) { console.log(e) } else {
             var temp_data = { 'key': log_list[l], 'value': o };
-            return_dataset.push(temp_data);
+            if(log_list[l]!=="unacked"){
+              return_dataset.push(temp_data);
+            }
           }
 
           if (i == keys.length) {
