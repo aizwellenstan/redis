@@ -1,8 +1,8 @@
 "use strict";
-// import path from "path";
-// import dotenv from "dotenv";
 Object.defineProperty(exports, "__esModule", { value: true });
-// dotenv.config({ path: path.resolve(__dirname, "../../../.env") });
+var path = require("path");
+var dotenv = require("dotenv");
+dotenv.config({ path: path.resolve(__dirname, "../../../.env") });
 exports.PUBLIC_URL = process.env.PUBLIC_URL;
 exports.BIND_PORT = Number(process.env.BIND_PORT);
 exports.ES_HOST = process.env.ES_HOST;
