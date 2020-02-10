@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --max-old-space-size=8192 node_modules/.bin/ts-node packages/server/src/main.ts"
+    "start": "pm2 start packages/server/dist/main.js --name redis",
+    "watch": "node --max-old-space-size=8192 node_modules/.bin/ts-node packages/server/src/main.ts",
+    "build": "tsc -p packages/server"
   },
   "author": "",
   "license": "ISC",

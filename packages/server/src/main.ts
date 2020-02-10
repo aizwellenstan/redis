@@ -2,8 +2,8 @@
 // import "reflect-metadata";
 // import { promises as fs } from "fs";
 // import path from 'path';
-import express from "express";
-import cors from "cors";
+import * as express from "express";
+import * as cors from "cors";
 // import depthLimit from "graphql-depth-limit";
 // import { ApolloServer, gql } from "apollo-server-express";
 // import i18nextMiddleware from "i18next-express-middleware";

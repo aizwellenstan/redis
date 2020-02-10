@@ -1,5 +1,5 @@
-import request from 'request'
-import mongoose from 'mongoose'
+import * as request from 'request'
+import * as mongoose from 'mongoose'
 import { BIND_PORT } from "./config";
 
 mongoose.connect("mongodb://localhost:27017/historical");
@@ -18,9 +18,9 @@ var initialData = function () {
 
     getIntial().then(data => {
         if (data.length !== 0) {
-            var timestamp = Math.floor(Date.now() / 1000)
+            // var timestamp = Math.floor(Date.now() / 1000)
             var uri = `http://127.0.0.1:${BIND_PORT}/historical`
-            request(uri, function (error, response, body) {
+            request(uri, function (body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
 
@@ -37,14 +37,14 @@ var initialData = function () {
                 var newvalues = { $set: { body: emptyAttr } };
 
 
-                return historical.updateOne(myquery, newvalues, function (err: Error, res: Response) {
+                return historical.updateOne(myquery, newvalues, function (err: Error) {
                     if (err) throw err;
                 });
             });
         } else {
-            var timestamp = Math.floor(Date.now() / 1000)
+            // var timestamp = Math.floor(Date.now() / 1000)
             var uri = `http://127.0.0.1:${BIND_PORT}/historical`
-            request(uri, function (error, response, body) {
+            request(uri, function (body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
 
@@ -70,7 +70,7 @@ var initialData = function () {
 var saveData = function () {
     var timestamp = Math.floor(Date.now() / 1000)
     var uri = `http://127.0.0.1:${BIND_PORT}/historical`
-    request(uri, function (error, response, body) {
+    request(uri, function (body) {
         // console.error('error:', error); // Print the error if one occurred
         // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         let historical = new Historical({

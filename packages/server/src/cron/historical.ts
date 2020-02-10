@@ -1,5 +1,4 @@
 import { CronJob } from 'cron';
-import { Connection } from 'typeorm';
 import request from 'request'
 import mongoose from 'mongoose'
 import { BIND_PORT } from "../config";
@@ -26,7 +25,7 @@ export class HistoricalCron {
         var timestamp = Math.floor(Date.now() / 1000)
         var uri = `http://127.0.0.1:${BIND_PORT}/historical`
         console.log(uri)
-        request(uri, function (error, response, body) {
+        request(uri, function (body) {
             // console.error('error:', error); // Print the error if one occurred
             // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             let historical = new Historical({

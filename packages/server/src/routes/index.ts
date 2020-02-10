@@ -1,17 +1,17 @@
 // import path from 'path';
-import express from 'express';
+import * as express from 'express';
 // import render from '../../../client';
 // import manifest from '../../../client/static/build/manifest.json';
 
-import bodyParser from "body-parser";
-import redis from 'redis'
-import mongoose from 'mongoose'
+import * as bodyParser from "body-parser";
+import * as redis from 'redis'
+// import mongoose from 'mongoose'
 const Historical = require("../models/historical");
 
-mongoose.connect("mongodb://localhost:27017/historical");
-mongoose.connection.once("open", () => {
-  console.log("conneted to database");
-});
+// mongoose.connect("mongodb://localhost:27017/historical");
+// mongoose.connection.once("open", () => {
+//   console.log("conneted to database");
+// });
 
 // const client = require.resolve('../../../client');
 const router = express.Router();
@@ -78,6 +78,9 @@ router.get("/historical", function (req, res) {
   if (from == "") {
     var return_dataset: Array<any> = [];
     client.keys('*', function (err, log_list) {
+      if(err) {
+        console.log(err)
+      }
       var keys = Object.keys(log_list);
       var i = 0;
 
@@ -133,6 +136,9 @@ router.get("/alarmhistorical", function (req, res) {
   if (from == "") {
     var return_dataset: Array<any> = [];
     client.keys('*', function (err, log_list) {
+      if(err){
+        console.log(err)
+      }
       var keys = Object.keys(log_list);
       var i = 0;
 
@@ -149,14 +155,21 @@ router.get("/alarmhistorical", function (req, res) {
           if (i == keys.length) {
             var data = return_dataset
 
+            var dict = new Map();
+
             for (var j = 0; j < data.length; j++) {
-              // data[j].ObjectId= data[j].key,
-              // data[j].Value= data[j].value.Value
-              // delete data[j].key
-              // delete data[j].value
-              data[j].key = data[j].value.Value
+              data[j].ObjectId= data[j].key,
+              data[j].Value= data[j].value.Value
+              
+
+              dict.set(j, j);
+              delete data[j].key
+              delete data[j].value
+              
             }
-            res.json(data);
+            
+            res.json("");
+            console.log(dict.get({}))
           }
         });
       });
@@ -180,9 +193,9 @@ router.post("/attribute", function (req, res) {
     client.hmset(
       data[i].objectId,
       ["Key", Key, "Value", data[i].Value, "Timestamp", Timestamp],
-      function (err, reply) {
+      function (err) {
         if (err) {
-          // console.log(err);
+          console.log(err);
         }
         // console.log(reply);
       }
@@ -201,9 +214,9 @@ router.post("/api/historicals/:objectId/attributes", function (req, res) {
   client.hmset(
     objectId,
     ["Key", Key, "Value", value, "Timestamp", Timestamp],
-    function (err, reply) {
+    function (err) {
       if (err) {
-        // console.log(err);
+        console.log(err);
       }
       // console.log(reply);
     }
