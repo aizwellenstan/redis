@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "pm2 start index.js --name fakedata",
+    "restart": "pm2 restart fakedata",
+    "watch": "node index",
     "createHis": "node createHis",
     "createAttr": "node createAttribute",
     "createAlarm": "node createAlarm",
