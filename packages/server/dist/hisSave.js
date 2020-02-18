@@ -66,9 +66,11 @@ var initialData = function () {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
                 body = JSON.parse(body);
-                for (var i = 0; i < body.length; i++) {
-                    delete body[i].Attributes;
-                    body[i].Attributes = [];
+                if (body) {
+                    for (var i = 0; i < body.length; i++) {
+                        delete body[i].Attributes;
+                        body[i].Attributes = [];
+                    }
                 }
                 var emptyAttr = JSON.stringify(body);
                 var historical = new Historical({});
