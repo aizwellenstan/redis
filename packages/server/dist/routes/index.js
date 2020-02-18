@@ -114,7 +114,7 @@ router.get("/historical", function (req, res) {
         var return_dataset = [];
         client.keys('*', function (err, log_list) {
             if (err) {
-                console.log(err);
+                // console.log(err)
             }
             var keys = Object.keys(log_list);
             var i = 0;
@@ -169,7 +169,7 @@ router.get("/alarmhistorical", function (req, res) {
         var return_dataset = [];
         client.keys('*', function (err, log_list) {
             if (err) {
-                console.log(err);
+                // console.log(err)
             }
             var keys = Object.keys(log_list);
             var i = 0;
@@ -218,7 +218,7 @@ router.post("/attribute", function (req, res) {
     for (var i in data) {
         client.hmset(data[i].objectId, ["Key", Key, "Value", data[i].Value, "Timestamp", Timestamp], function (err) {
             if (err) {
-                console.log(err);
+                // console.log(err);
             }
             // console.log(reply);
         });
@@ -234,7 +234,7 @@ router.post("/api/historicals/:objectId/attributes", function (req, res) {
     Key = "Present_Value";
     client.hmset(objectId, ["Key", Key, "Value", value, "Timestamp", Timestamp], function (err) {
         if (err) {
-            console.log(err);
+            // console.log(err);
         }
         // console.log(reply);
     });
