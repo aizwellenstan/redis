@@ -234,7 +234,7 @@ router.post("/api/historicals/:objectId/attributes", function (req, res) {
     Key = "Present_Value";
     client.hmset(objectId, ["Key", Key, "Value", value, "Timestamp", Timestamp], function (err) {
         if (err) {
-            console.log(err);
+            // console.log(err);
         }
         // console.log(reply);
     });
