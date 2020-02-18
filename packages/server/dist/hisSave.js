@@ -39,7 +39,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var request = require("request");
 var mongoose = require("mongoose");
 var config_1 = require("./config");
-mongoose.connect("mongodb://localhost:27017/historical");
+mongoose.connect("mongodb://localhost:27018/historical");
 mongoose.connection.once("open", function () {
     console.log("conneted to database");
 });
