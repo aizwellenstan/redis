@@ -118,7 +118,6 @@ var saveData = function () {
             timestamp: timestamp,
             body: body
         });
-        console.log("saved")
         return historical.save();
     });
     // console.log("========saving data========")

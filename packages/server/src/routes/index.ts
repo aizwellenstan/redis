@@ -169,7 +169,7 @@ router.get("/alarmhistorical", function (req, res) {
             }
             
             res.json("");
-            console.log(dict.get({}))
+            // console.log(dict.get({}))
           }
         });
       });

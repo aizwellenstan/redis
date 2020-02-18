@@ -196,7 +196,7 @@ router.get("/alarmhistorical", function (req, res) {
                             delete data[j].value;
                         }
                         res.json("");
-                        console.log(dict.get({}));
+                        // console.log(dict.get({}))
                     }
                 });
             });
