@@ -61,12 +61,11 @@ var initialData = function () {
     getIntial().then(function (data) {
         if (data.length !== 0) {
             // var timestamp = Math.floor(Date.now() / 1000)
-            var uri = "https://product.nadi3docms.com/his/historical";
+            var uri = "http://127.0.0.1:" + config_1.BIND_PORT + "/historical";
             console.log(uri)
-            request(uri, function (body) {
+            request(uri, function (error, response, body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-                console.log(body)
                 body = JSON.parse(body);
                 // console.log(body)
                 if (body) {
