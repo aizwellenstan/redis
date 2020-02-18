@@ -143,10 +143,11 @@ var ddosAlarm_His = function(ObjectId, min, max) {
 var ddosHis = function(ObjectId, min, max) {
   async function resolveSample() {
     createHis.uri = URI;
-    createHis.json = JSON.parse('[{"objectId":"' + ObjectId + '"}]');
+    var rand = randomIntFromInterval(min, max);
+    createHis.json = JSON.parse('[{"objectId":"' + ObjectId + '","Value":"' + rand + '"}]');
 
     // his.uri = URI + ObjectId + "/attributes";
-    // var rand = randomIntFromInterval(min, max);
+   
     // his.json = JSON.parse('[{"Value":"' + rand + '"}]');
   }
 
