@@ -62,12 +62,11 @@ var initialData = function () {
         if (data.length !== 0) {
             // var timestamp = Math.floor(Date.now() / 1000)
             var uri = "http://127.0.0.1:" + config_1.BIND_PORT + "/historical";
-            console.log(uri)
+            //@ts-ignore
             request(uri, function (error, response, body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
                 body = JSON.parse(body);
-                console.log(body)
                 if (body) {
                     for (var i = 0; i < body.length; i++) {
                         delete body[i].Attributes;
@@ -87,11 +86,11 @@ var initialData = function () {
         else {
             // var timestamp = Math.floor(Date.now() / 1000)
             var uri = "http://127.0.0.1:" + config_1.BIND_PORT + "/historical";
-            request(uri, function (body) {
+            //@ts-ignore
+            request(uri, function (error, response, body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
                 body = JSON.parse(body);
-                console.log(body)
                 if (body) {
                     for (var i = 0; i < body.length; i++) {
                         delete body[i].Attributes;

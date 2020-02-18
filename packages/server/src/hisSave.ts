@@ -20,7 +20,8 @@ var initialData = function () {
         if (data.length !== 0) {
             // var timestamp = Math.floor(Date.now() / 1000)
             var uri = `http://127.0.0.1:${BIND_PORT}/historical`
-            request(uri, function (body) {
+            //@ts-ignore
+            request(uri, function (error, response, body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
 
@@ -46,7 +47,8 @@ var initialData = function () {
         } else {
             // var timestamp = Math.floor(Date.now() / 1000)
             var uri = `http://127.0.0.1:${BIND_PORT}/historical`
-            request(uri, function (body) {
+            //@ts-ignore
+            request(uri, function (error, response, body) {
                 // console.error('error:', error); // Print the error if one occurred
                 // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
 
