@@ -154,7 +154,7 @@ var ddosHis = function(ObjectId, min, max) {
     request.post(createHis, function(error, response, body) {}),
     // request.post(his, function(error, response, body) {}),
     // console.log('post ' + his.uri + ' ' + his.json.Value)
-    console.log(createHis)
+    console.log(request.post(createHis, function(error, response, body) {}))
   );
 };
 
