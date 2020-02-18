@@ -122,7 +122,7 @@ router.get("/historical", function (req, res) {
                 client.hgetall(log_list[l], function (e, o) {
                     i++;
                     if (e) {
-                        console.log(e);
+                        // console.log(e) 
                     }
                     else {
                         var temp_data = { 'key': log_list[l], 'value': o };

@@ -87,7 +87,9 @@ router.get("/historical", function (req, res) {
       keys.forEach(function (l: any) {
         client.hgetall(log_list[l], function (e, o) {
           i++;
-          if (e) { console.log(e) } else {
+          if (e) { 
+            // console.log(e) 
+          } else {
             var temp_data = { 'key': log_list[l], 'value': o };
             if(log_list[l]!=="unacked"){
               return_dataset.push(temp_data);
