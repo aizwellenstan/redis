@@ -110,7 +110,8 @@ var initialData = function () {
 var saveData = function () {
     var timestamp = Math.floor(Date.now() / 1000);
     var uri = "http://127.0.0.1:" + config_1.BIND_PORT + "/historical";
-    request(uri, function (body) {
+    //@ts-ignore
+    request(uri, function (error, response, body) {
         // console.error('error:', error); // Print the error if one occurred
         // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         var historical = new Historical({
