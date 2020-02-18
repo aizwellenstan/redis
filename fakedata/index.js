@@ -96,7 +96,7 @@ request.post(fakeAlarm, function(error, response, body) {
   console.log(response);
 });
 
-const URI = "http://localhost:4000/historical";
+const URI = "http://localhost:6004/historical";
 
 var alarm = {
   uri: "http://127.0.0.1:5443/testAlarmTrigger/",
