@@ -61,7 +61,7 @@ var initialData = function () {
     getIntial().then(function (data) {
         if (data.length !== 0) {
             // var timestamp = Math.floor(Date.now() / 1000)
-            var uri = "http://127.0.0.1:" + config_1.BIND_PORT + "/historical";
+            var uri = "https://product.nadi3docms.com/his/historical";
             console.log(uri)
             request(uri, function (body) {
                 // console.error('error:', error); // Print the error if one occurred
