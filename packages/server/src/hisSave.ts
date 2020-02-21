@@ -2,7 +2,13 @@ import * as request from 'request'
 import * as mongoose from 'mongoose'
 import { BIND_PORT } from "./config";
 
-mongoose.connect("mongodb://localhost:27018/historical");
+mongoose.connect("mongodb://localhost:27018/historical", {
+    poolSize: 10, 
+    bufferMaxEntries: 0, 
+    reconnectTries: 5000,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 mongoose.connection.once("open", () => {
     console.log("conneted to database");
 });
