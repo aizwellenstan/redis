@@ -177,7 +177,7 @@ router.get("/alarmhistorical", function (req, res) {
                 client.hgetall(log_list[l], function (e, o) {
                     i++;
                     if (e) {
-                        console.log(e);
+                        // console.log(e) 
                     }
                     else {
                         var temp_data = { 'key': log_list[l], 'value': o };
@@ -214,7 +214,6 @@ router.post("/attribute", function (req, res) {
     var Key = "Present_Value";
     var Timestamp = Math.floor(Date.now() / 1000);
     var data = req.body;
-    console.log(req.body)
     Key = "Present_Value";
     for (var i in data) {
         client.hmset(data[i].objectId, ["Key", Key, "Value", data[i].Value, "Timestamp", Timestamp], function (err) {
