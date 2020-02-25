@@ -12,11 +12,11 @@ attribute = {
 
 function randomIntFromInterval(min, max, dec) {
   // min and max included
+  console.log(dec)
   if(dec){
     return Math.round((Math.random() * (max - min + 1) + min)*10)/10;
-  }else{
-    return Math.floor(Math.random() * (max - min + 1) + min)
   }
+  return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 var createAttribute = function (data) {
@@ -25,7 +25,7 @@ var createAttribute = function (data) {
     array = [];
     // console.log(data[0].ObjectId);
     for (var i = 0; i < data.length; i++) {
-      var rand = randomIntFromInterval(data[i].min, data[i].max);
+      var rand = randomIntFromInterval(data[i].min, data[i].max, data[i].dec);
       objectArray = { objectId: data[i].objectId, Value: rand };
 
       array.push(objectArray);
