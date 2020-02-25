@@ -128,10 +128,17 @@ var ddosAlarm_His = function (ObjectId, min, max) {
 };
 
 // 5 alam datas
-setInterval(function () {
-  ddosAlarm_His("f9ad22d7-4657-408b-95db-08147c619ae7", 51, 60); // CO 感測器1
-  ddosAlarm_His("4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", 0, 0); // 冷卻水塔-1運轉狀態
-  ddosAlarm_His("b48ddf73-c31d-4731-8047-83ad40e73464", 0, 0); // 冷卻馬達-1運轉狀態
-  ddosAlarm_His("8b13dfea-a7fb-4404-88a5-b58f5a3e5822", 1, 1); // 冷卻馬達-1故障跳脫
-  ddosAlarm_His("e10f9d11-13b5-4694-ba12-cec88222cf20", 1, 1); // ACBB1-故障狀態01
-}, 5000);
+createAlarm = () => {
+  request.post(fakeAlarm, function (error, response, body) {
+    console.log(response);
+  });
+  setInterval(function () {
+    ddosAlarm_His("f9ad22d7-4657-408b-95db-08147c619ae7", 51, 60); // CO 感測器1
+    ddosAlarm_His("4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", 0, 0); // 冷卻水塔-1運轉狀態
+    ddosAlarm_His("b48ddf73-c31d-4731-8047-83ad40e73464", 0, 0); // 冷卻馬達-1運轉狀態
+    ddosAlarm_His("8b13dfea-a7fb-4404-88a5-b58f5a3e5822", 1, 1); // 冷卻馬達-1故障跳脫
+    ddosAlarm_His("e10f9d11-13b5-4694-ba12-cec88222cf20", 1, 1); // ACBB1-故障狀態01
+  }, 5000);
+}
+
+module.exports = createAlarm

@@ -108,33 +108,33 @@ nocahngeArray = [
 
 changeArray = [
   { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 15, max: 15 }, // 冷卻水塔-1回水溫度
-  { objectId: "be3d2034-9116-453b-b76f-fdcad1e11125", min: 20, max: 100 }, // 冷卻水塔模組1-外氣溫度
-  { objectId: "1036c4fb-da99-405a-8240-18f274011c63", min: 20, max: 100 }, // 冷卻水塔模組1-外氣濕度
-  { objectId: "474308ae-c944-448c-9b3a-51b1c2694b35", min: 20, max: 100 }, // 冷卻水塔模組1-外氣露點
+  { objectId: "be3d2034-9116-453b-b76f-fdcad1e11125", min: 15, max: 30 }, // 冷卻水塔模組1-外氣溫度
+  { objectId: "1036c4fb-da99-405a-8240-18f274011c63", min: 45, max: 90 }, // 冷卻水塔模組1-外氣濕度
+  { objectId: "474308ae-c944-448c-9b3a-51b1c2694b35", min: 18.75, max: 37.5 }, // 冷卻水塔模組1-外氣露點
   { objectId: "559df386-cf80-4f72-a712-ab061a427a25", min: 15, max: 15 }, // 冷卻水塔-2回水溫度
-  { objectId: "bc61cbd5-43f6-4bb5-a021-c6f1c5e8cc10", min: 20, max: 100 }, // 冷卻水塔模組2-外氣溫度
-  { objectId: "d59f0b12-e559-4fcf-9f6b-c801158e17e8", min: 20, max: 100 }, // 冷卻水塔模組2-外氣濕度
-  { objectId: "47f7e999-44f6-43ea-9e98-9ba3e28b5750", min: 20, max: 100 }, // 冷卻水塔模組2-外氣露點
+  { objectId: "bc61cbd5-43f6-4bb5-a021-c6f1c5e8cc10", min: 24.75, max: 49.5 }, // 冷卻水塔模組2-外氣溫度
+  { objectId: "d59f0b12-e559-4fcf-9f6b-c801158e17e8", min: 45, max: 90 }, // 冷卻水塔模組2-外氣濕度
+  { objectId: "47f7e999-44f6-43ea-9e98-9ba3e28b5750", min: 19.05, max: 38.1 }, // 冷卻水塔模組2-外氣露點
   { objectId: "8918c16e-690a-413d-b24a-5fac497693a2", min: 15, max: 15 }, // 冷卻水塔-3回水溫度
-  { objectId: "d8b380d8-e718-4cbf-886d-43bdef496021", min: 20, max: 100 }, // 冷卻水塔模組3-外氣溫度
-  { objectId: "88e0f77c-4d96-4d9c-9125-596d4e886715", min: 20, max: 100 }, // 冷卻水塔模組3-外氣濕度
-  { objectId: "a4b4c39e-8d17-4a21-99be-9756dc8fce7c", min: 20, max: 100 }, // 冷卻水塔模組3-外氣露點
-  { objectId: "e098a47b-89aa-4867-9351-752d35793cee", min: 20, max: 100 }, // 冷卻水泵模組1-冷卻水泵-1加載設定值
-  { objectId: "8df1c517-3808-4801-8b38-65fc8cf74275", min: 20, max: 100 }, // 冷卻水泵模組1-冷卻水泵-1卸載設定值
-  { objectId: "9d4f97f9-dbb6-4614-b40d-2884735d7765", min: 20, max: 100 }, // 冷卻水泵模組1-冷卻水泵-1交替時間
-  { objectId: "064f615d-cc56-4989-aca0-8c2963ff98ba", min: 20, max: 100 }, // 冷卻水泵模組1-冷卻水泵-1交替延遲
-  { objectId: "977d5a7b-6d7e-46f3-8125-a8847784cf60", min: 20, max: 100 }, // 冷卻水泵模組1-冷卻水泵-1頻率輸出
-  { objectId: "1f7986f1-b442-4d94-8104-4ce2a4734921", min: 20, max: 100 }, // 冷卻水泵模組2-冷卻水泵-2加載設定值
-  { objectId: "668c190b-feee-43c6-8295-b1390a07aae4", min: 20, max: 100 }, // 冷卻水泵模組2-冷卻水泵-2卸載設定值
-  { objectId: "39af6242-407c-4973-ae91-961e2e26fd79", min: 20, max: 100 }, // 冷卻水泵模組2-冷卻水泵-2交替時間
-  { objectId: "bc32da6f-a744-4524-b87a-ea671ced874f", min: 20, max: 100 }, // 冷卻水泵模組2-冷卻水泵-2交替延遲
-  { objectId: "7fd7f3e8-05f3-4be1-add5-f907042c899b", min: 20, max: 100 }, // 冷卻水泵模組2-冷卻水泵-2頻率輸出
-  { objectId: "05971ce2-2c63-4857-b876-cbf272ce7fff", min: 20, max: 100 }, // 冷卻水泵模組3-冷卻水泵-3加載設定值
-  { objectId: "68739a53-2efa-42f6-8ca5-bb2109ac7557", min: 20, max: 100 }, // 冷卻水泵模組3-冷卻水泵-3卸載設定值
-  { objectId: "76e18c37-19b6-4126-b8a5-90b009e49a5c", min: 20, max: 100 }, // 冷卻水泵模組3-冷卻水泵-3交替時間
-  { objectId: "56e33dfe-fead-4c0b-934e-374c10855a3c", min: 20, max: 100 }, // 冷卻水泵模組3-冷卻水泵-3交替延遲
-  { objectId: "64c9e84b-7c8a-4153-a833-142f53ca34b4", min: 20, max: 100 }, // 冷卻水泵模組3-冷卻水泵-3頻率輸出
-  { objectId: "2d66338e-6eb3-492e-8cf9-fa61836ead48", min: 20, max: 100 }, // 回風溫度值
+  { objectId: "d8b380d8-e718-4cbf-886d-43bdef496021", min: 24.75, max: 49.5 }, // 冷卻水塔模組3-外氣溫度
+  { objectId: "88e0f77c-4d96-4d9c-9125-596d4e886715", min: 45.75, max: 91.5 }, // 冷卻水塔模組3-外氣濕度
+  { objectId: "a4b4c39e-8d17-4a21-99be-9756dc8fce7c", min: 19.13, max: 38.25 }, // 冷卻水塔模組3-外氣露點
+  { objectId: "e098a47b-89aa-4867-9351-752d35793cee", min: 22.5, max: 45 }, // 冷卻水泵模組1-冷卻水泵-1加載設定值
+  { objectId: "8df1c517-3808-4801-8b38-65fc8cf74275", min: 52.5, max: 105 }, // 冷卻水泵模組1-冷卻水泵-1卸載設定值
+  { objectId: "9d4f97f9-dbb6-4614-b40d-2884735d7765", min: 135, max: 270 }, // 冷卻水泵模組1-冷卻水泵-1交替時間
+  { objectId: "064f615d-cc56-4989-aca0-8c2963ff98ba", min: 15, max: 30 }, // 冷卻水泵模組1-冷卻水泵-1交替延遲
+  { objectId: "977d5a7b-6d7e-46f3-8125-a8847784cf60", min: 30, max: 60 }, // 冷卻水泵模組1-冷卻水泵-1頻率輸出
+  { objectId: "1f7986f1-b442-4d94-8104-4ce2a4734921", min: 22.5, max: 45 }, // 冷卻水泵模組2-冷卻水泵-2加載設定值
+  { objectId: "668c190b-feee-43c6-8295-b1390a07aae4", min: 52.5, max: 105 }, // 冷卻水泵模組2-冷卻水泵-2卸載設定值
+  { objectId: "39af6242-407c-4973-ae91-961e2e26fd79", min: 135, max: 270 }, // 冷卻水泵模組2-冷卻水泵-2交替時間
+  { objectId: "bc32da6f-a744-4524-b87a-ea671ced874f", min: 15, max: 30 }, // 冷卻水泵模組2-冷卻水泵-2交替延遲
+  { objectId: "7fd7f3e8-05f3-4be1-add5-f907042c899b", min: 30, max: 60 }, // 冷卻水泵模組2-冷卻水泵-2頻率輸出
+  { objectId: "05971ce2-2c63-4857-b876-cbf272ce7fff", min: 22.5, max: 45 }, // 冷卻水泵模組3-冷卻水泵-3加載設定值
+  { objectId: "68739a53-2efa-42f6-8ca5-bb2109ac7557", min: 52.5, max: 105 }, // 冷卻水泵模組3-冷卻水泵-3卸載設定值
+  { objectId: "76e18c37-19b6-4126-b8a5-90b009e49a5c", min: 135, max: 270 }, // 冷卻水泵模組3-冷卻水泵-3交替時間
+  { objectId: "56e33dfe-fead-4c0b-934e-374c10855a3c", min: 15, max: 30 }, // 冷卻水泵模組3-冷卻水泵-3交替延遲
+  { objectId: "64c9e84b-7c8a-4153-a833-142f53ca34b4", min: 30, max: 60 }, // 冷卻水泵模組3-冷卻水泵-3頻率輸出
+  { objectId: "2d66338e-6eb3-492e-8cf9-fa61836ead48", min: 21, max: 42 }, // 回風溫度值
   { objectId: "2c318c8b-77cd-4cbf-948c-941f15ef2e08", min: 65, max: 65 }, // 回風濕度值
   { objectId: "015951a5-116a-4f00-ab52-af4f7cf30ab4", min: 28, max: 28 }, // 回風溫度值
   { objectId: "28c77277-4989-46cc-8bc2-d4b3eef8f615", min: 20, max: 100 }, // 回風濕度值
@@ -166,12 +166,17 @@ changeArray = [
   { objectId: "4a01b9a3-c68b-45d2-a3ea-17b3b3e31e4f", min: 0.9, max: 0.9 }, // 發電機3功因Pf
   { objectId: "bea053a1-6be9-44d8-8762-33812b358d24", min: 59.8, max: 60.1 }, // 發電機3頻率Hz
   { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 51, max: 60 }, // CO 感測器1
-  { objectId: "1e243a9a-2bff-43c4-94fe-cf0205b12cb3", min: 20, max: 100 }, // CO 感測器2
-  { objectId: "fb6f0fdf-a5e2-4620-8870-1993362b2919", min: 20, max: 100 } // CO 感測器3
+  { objectId: "1e243a9a-2bff-43c4-94fe-cf0205b12cb3", min: 20, max: 45 }, // CO 感測器2
+  { objectId: "fb6f0fdf-a5e2-4620-8870-1993362b2919", min: 20, max: 45 } // CO 感測器3
 ];
 
-createAttribute(nocahngeArray)
+var createAttributes = () => {
+  createAttribute(nocahngeArray)
 
-setInterval(function () {
-  createAttribute(changeArray);
-}, 1000);
+  setInterval(function () {
+    createAttribute(changeArray);
+  }, 1000);
+}
+
+module.exports = createAttributes
+
