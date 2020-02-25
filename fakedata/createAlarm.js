@@ -37,19 +37,19 @@ var fakeAlarm = {
       AlarmMessageJapenese: "冷卻馬達-2停止中",
       IsOpenTrigger: "1"
     },
-    {
-      objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20",
-      DisplayObjectId: "energy_volltagemchine000301", //電箱01 
-      AlarmCategory: "Emergency",
-      AlarmFunction: "AlarmNeedAckNoReset",
-      TriggerLogic: "=",
-      trigger_value: "1",
-      AlarmMessage: "ACBB1-故障",
-      AlarmMessageEnglish: "ACBB1-故障",
-      AlarmMessageSpanish: "ACBB1-故障",
-      AlarmMessageJapenese: "ACBB1-故障",
-      IsOpenTrigger: "1"
-    },
+    // {
+    //   objectId: "e10f9d11-13b5-4694-ba12-cec88222cf20",
+    //   DisplayObjectId: "energy_volltagemchine000301", //電箱01 
+    //   AlarmCategory: "Emergency",
+    //   AlarmFunction: "AlarmNeedAckNoReset",
+    //   TriggerLogic: "=",
+    //   trigger_value: "1",
+    //   AlarmMessage: "ACBB1-故障",
+    //   AlarmMessageEnglish: "ACBB1-故障",
+    //   AlarmMessageSpanish: "ACBB1-故障",
+    //   AlarmMessageJapenese: "ACBB1-故障",
+    //   IsOpenTrigger: "1"
+    // },
     {
       objectId: "4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef",
       DisplayObjectId: "environment_chillerwatertank000301", //冷水箱01 
@@ -137,7 +137,7 @@ createAlarm = () => {
     ddosAlarm_His("4bdc2e8a-ce5c-4a84-b0a8-8efe4d74e0ef", 0, 0); // 冷卻水塔-1運轉狀態
     ddosAlarm_His("b48ddf73-c31d-4731-8047-83ad40e73464", 0, 0); // 冷卻馬達-1運轉狀態
     ddosAlarm_His("8b13dfea-a7fb-4404-88a5-b58f5a3e5822", 1, 1); // 冷卻馬達-1故障跳脫
-    ddosAlarm_His("e10f9d11-13b5-4694-ba12-cec88222cf20", 1, 1); // ACBB1-故障狀態01
+    // ddosAlarm_His("e10f9d11-13b5-4694-ba12-cec88222cf20", 1, 1); // ACBB1-故障狀態01
   }, 5000);
 }
 
