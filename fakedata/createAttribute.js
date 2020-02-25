@@ -57,7 +57,7 @@ nocahngeArray = [
   { objectId: "ea8a812b-32de-4df0-b1b2-f746db7b8ff0", min: 1, max: 1 },
   { objectId: "72d857a8-ced2-423c-9e70-7febea4ba16e", min: 1, max: 1 },
   { objectId: "efa56d9c-5dea-45cc-8b17-402eccdd4c65", min: 1, max: 1 },
-  { objectId: "5dfdc14e-d8c9-4a77-a14f-77590198b3bf", min: 37.5, max: 75, dec },
+  { objectId: "5dfdc14e-d8c9-4a77-a14f-77590198b3bf", min: 37.5, max: 75, dec: true },
   { objectId: "0cc1e583-d283-4a48-af61-604bf594c622", min: 1, max: 1 },
   { objectId: "1d31cfeb-ded3-42d6-9f1f-48c2ab21fc4d", min: 1, max: 1 },
 
@@ -113,15 +113,15 @@ changeArray = [
   { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 15, max: 15 }, // 冷卻水塔-1回水溫度
   { objectId: "be3d2034-9116-453b-b76f-fdcad1e11125", min: 15, max: 30 }, // 冷卻水塔模組1-外氣溫度
   { objectId: "1036c4fb-da99-405a-8240-18f274011c63", min: 45, max: 90 }, // 冷卻水塔模組1-外氣濕度
-  { objectId: "474308ae-c944-448c-9b3a-51b1c2694b35", min: 18.75, max: 37.5, dec }, // 冷卻水塔模組1-外氣露點
+  { objectId: "474308ae-c944-448c-9b3a-51b1c2694b35", min: 18.75, max: 37.5, dec: true }, // 冷卻水塔模組1-外氣露點
   { objectId: "559df386-cf80-4f72-a712-ab061a427a25", min: 15, max: 15 }, // 冷卻水塔-2回水溫度
-  { objectId: "bc61cbd5-43f6-4bb5-a021-c6f1c5e8cc10", min: 24.75, max: 49.5, dec }, // 冷卻水塔模組2-外氣溫度
+  { objectId: "bc61cbd5-43f6-4bb5-a021-c6f1c5e8cc10", min: 24.75, max: 49.5, dec: true }, // 冷卻水塔模組2-外氣溫度
   { objectId: "d59f0b12-e559-4fcf-9f6b-c801158e17e8", min: 45, max: 90 }, // 冷卻水塔模組2-外氣濕度
-  { objectId: "47f7e999-44f6-43ea-9e98-9ba3e28b5750", min: 19.05, max: 38.1, dec }, // 冷卻水塔模組2-外氣露點
+  { objectId: "47f7e999-44f6-43ea-9e98-9ba3e28b5750", min: 19.05, max: 38.1, dec: true }, // 冷卻水塔模組2-外氣露點
   { objectId: "8918c16e-690a-413d-b24a-5fac497693a2", min: 15, max: 15 }, // 冷卻水塔-3回水溫度
-  { objectId: "d8b380d8-e718-4cbf-886d-43bdef496021", min: 24.75, max: 49.5, dec }, // 冷卻水塔模組3-外氣溫度
-  { objectId: "88e0f77c-4d96-4d9c-9125-596d4e886715", min: 45.75, max: 91.5, dec }, // 冷卻水塔模組3-外氣濕度
-  { objectId: "a4b4c39e-8d17-4a21-99be-9756dc8fce7c", min: 19.13, max: 38.3, dec }, // 冷卻水塔模組3-外氣露點
+  { objectId: "d8b380d8-e718-4cbf-886d-43bdef496021", min: 24.75, max: 49.5, dec: true }, // 冷卻水塔模組3-外氣溫度
+  { objectId: "88e0f77c-4d96-4d9c-9125-596d4e886715", min: 45.75, max: 91.5, dec: true }, // 冷卻水塔模組3-外氣濕度
+  { objectId: "a4b4c39e-8d17-4a21-99be-9756dc8fce7c", min: 19.13, max: 38.3, dec: true }, // 冷卻水塔模組3-外氣露點
   { objectId: "e098a47b-89aa-4867-9351-752d35793cee", min: 22.5, max: 45 }, // 冷卻水泵模組1-冷卻水泵-1加載設定值
   { objectId: "8df1c517-3808-4801-8b38-65fc8cf74275", min: 52.5, max: 105 }, // 冷卻水泵模組1-冷卻水泵-1卸載設定值
   { objectId: "9d4f97f9-dbb6-4614-b40d-2884735d7765", min: 135, max: 270 }, // 冷卻水泵模組1-冷卻水泵-1交替時間
@@ -141,32 +141,32 @@ changeArray = [
   { objectId: "2c318c8b-77cd-4cbf-948c-941f15ef2e08", min: 65, max: 65 }, // 回風濕度值
   { objectId: "015951a5-116a-4f00-ab52-af4f7cf30ab4", min: 28, max: 28 }, // 回風溫度值
   { objectId: "28c77277-4989-46cc-8bc2-d4b3eef8f615", min: 20, max: 100 }, // 回風濕度值
-  { objectId: "53402a68-06cd-43d7-b07d-b90844ed6f49", min: 219.6, max: 220.4, dec }, // ACBB1電表電壓V1
-  { objectId: "d2825cd1-8f53-4d9b-9090-689294c73d32", min: 219.6, max: 220.4, dec }, // ACBB1電表電壓V2
-  { objectId: "cbace30c-50c2-47fa-8a67-d5501726663c", min: 219.6, max: 220.4, dec }, // ACBB1電表電壓V3
-  { objectId: "88cb061c-5ffc-42dd-a59a-a3063b86af7f", min: 0.3, max: 0.5, dec }, // ACBB1電表電流I1
-  { objectId: "e90df963-e309-4981-b254-53f24a24d549", min: 0.3, max: 0.5, dec }, // ACBB1電表電流I2
-  { objectId: "2981dd6d-6f75-496a-a9e6-374d493bbd31", min: 0.3, max: 0.5, dec }, // ACBB1電表電流I3
-  { objectId: "fd4760e1-3912-48d1-88bf-3e4f17455613", min: 0.8, max: 1.1, dec }, // ACBB1電表電功率KW
-  { objectId: "8b3712c9-eec3-4cf1-bea4-3868c7ae17e5", min: 0.8, max: 0.8, dec }, // ACBB1電表功因Pf
-  { objectId: "843d7623-488a-4d93-a8b5-b13faf8ab813", min: 59.8, max: 60.1, dec }, // ACBB1電表頻率Hz
-  { objectId: "f74346d5-3061-4269-9059-5cd3dd37a055", min: 219.6, max: 220.4, dec }, // ACBB2電表電壓V1
-  { objectId: "0c4e11e6-8f41-4ac0-8f61-c1dcb97a092b", min: 219.6, max: 220.4, dec }, // ACBB2電表電壓V2
-  { objectId: "7825ec50-ec55-4ba5-89dc-09d7a3005c03", min: 219.6, max: 220.4, dec }, // ACBB2電表電壓V3
-  { objectId: "02273ca2-0fd4-4fa3-bc69-205147daa8ac", min: 1.0, max: 1.2, dec }, // ACBB2電表電流I1
-  { objectId: "7c19e6fb-b1c3-49d2-8f7e-f69b1e228c08", min: 1.2, max: 1.3, dec }, // ACBB2電表電流I2
-  { objectId: "7a648611-9823-481e-a076-f3856cd3f874", min: 1.2, max: 1.5, dec }, // ACBB2電表電流I3
-  { objectId: "82846ee6-d61a-439e-af6a-00ac836fd37f", min: 1.1, max: 1.3, dec }, // ACBB2電表電功率KW
-  { objectId: "d124d2e3-501e-461c-951e-84e3a9ee2be4", min: 0.8, max: 0.8, dec }, // ACBB2電表功因Pf
-  { objectId: "e66c1d8b-7828-402b-ab65-88e99dbb7045", min: 59.8, max: 60.1, dec }, // ACBB2電表頻率Hz
-  { objectId: "01a308db-90c9-45b5-a6dd-cbcc23a9a7ec", min: 219.6, max: 220.4, dec }, // 發電機3電壓V1
-  { objectId: "34162679-dc25-419a-8d06-7cc9fa054466", min: 219.6, max: 220.4, dec }, // 發電機3電壓V2
-  { objectId: "6222709e-5560-4cea-ba98-ebae51a62a06", min: 219.6, max: 220.4, dec }, // 發電機3電壓V3
+  { objectId: "53402a68-06cd-43d7-b07d-b90844ed6f49", min: 219.6, max: 220.4, dec: true }, // ACBB1電表電壓V1
+  { objectId: "d2825cd1-8f53-4d9b-9090-689294c73d32", min: 219.6, max: 220.4, dec: true }, // ACBB1電表電壓V2
+  { objectId: "cbace30c-50c2-47fa-8a67-d5501726663c", min: 219.6, max: 220.4, dec: true }, // ACBB1電表電壓V3
+  { objectId: "88cb061c-5ffc-42dd-a59a-a3063b86af7f", min: 0.3, max: 0.5, dec: true }, // ACBB1電表電流I1
+  { objectId: "e90df963-e309-4981-b254-53f24a24d549", min: 0.3, max: 0.5, dec: true }, // ACBB1電表電流I2
+  { objectId: "2981dd6d-6f75-496a-a9e6-374d493bbd31", min: 0.3, max: 0.5, dec: true }, // ACBB1電表電流I3
+  { objectId: "fd4760e1-3912-48d1-88bf-3e4f17455613", min: 0.8, max: 1.1, dec: true }, // ACBB1電表電功率KW
+  { objectId: "8b3712c9-eec3-4cf1-bea4-3868c7ae17e5", min: 0.8, max: 0.8, dec: true }, // ACBB1電表功因Pf
+  { objectId: "843d7623-488a-4d93-a8b5-b13faf8ab813", min: 59.8, max: 60.1, dec: true }, // ACBB1電表頻率Hz
+  { objectId: "f74346d5-3061-4269-9059-5cd3dd37a055", min: 219.6, max: 220.4, dec: true }, // ACBB2電表電壓V1
+  { objectId: "0c4e11e6-8f41-4ac0-8f61-c1dcb97a092b", min: 219.6, max: 220.4, dec: true }, // ACBB2電表電壓V2
+  { objectId: "7825ec50-ec55-4ba5-89dc-09d7a3005c03", min: 219.6, max: 220.4, dec: true }, // ACBB2電表電壓V3
+  { objectId: "02273ca2-0fd4-4fa3-bc69-205147daa8ac", min: 1.0, max: 1.2, dec: true }, // ACBB2電表電流I1
+  { objectId: "7c19e6fb-b1c3-49d2-8f7e-f69b1e228c08", min: 1.2, max: 1.3, dec: true }, // ACBB2電表電流I2
+  { objectId: "7a648611-9823-481e-a076-f3856cd3f874", min: 1.2, max: 1.5, dec: true }, // ACBB2電表電流I3
+  { objectId: "82846ee6-d61a-439e-af6a-00ac836fd37f", min: 1.1, max: 1.3, dec: true }, // ACBB2電表電功率KW
+  { objectId: "d124d2e3-501e-461c-951e-84e3a9ee2be4", min: 0.8, max: 0.8, dec: true }, // ACBB2電表功因Pf
+  { objectId: "e66c1d8b-7828-402b-ab65-88e99dbb7045", min: 59.8, max: 60.1, dec: true }, // ACBB2電表頻率Hz
+  { objectId: "01a308db-90c9-45b5-a6dd-cbcc23a9a7ec", min: 219.6, max: 220.4, dec: true }, // 發電機3電壓V1
+  { objectId: "34162679-dc25-419a-8d06-7cc9fa054466", min: 219.6, max: 220.4, dec: true }, // 發電機3電壓V2
+  { objectId: "6222709e-5560-4cea-ba98-ebae51a62a06", min: 219.6, max: 220.4, dec: true }, // 發電機3電壓V3
   { objectId: "872f7c43-12d1-432f-9f9f-13b822218f13", min: 38, max: 38 }, // 發電機3電流I1
   { objectId: "3530d351-3f2e-4296-b4a1-477ec88f72b1", min: 37, max: 37 }, // 發電機3電流I2
   { objectId: "c91cc744-a977-46b6-9fb6-3de05b0c1cb8", min: 35, max: 35 }, // 發電機3電流I3
-  { objectId: "07a59ed6-cef8-4c43-8626-66d8df59c6a9", min: 14.1, max: 14.1, dec }, // 發電機3電功率KW
-  { objectId: "4a01b9a3-c68b-45d2-a3ea-17b3b3e31e4f", min: 0.9, max: 0.9, dec }, // 發電機3功因Pf
+  { objectId: "07a59ed6-cef8-4c43-8626-66d8df59c6a9", min: 14.1, max: 14.1, dec: true }, // 發電機3電功率KW
+  { objectId: "4a01b9a3-c68b-45d2-a3ea-17b3b3e31e4f", min: 0.9, max: 0.9, dec: true }, // 發電機3功因Pf
   { objectId: "bea053a1-6be9-44d8-8762-33812b358d24", min: 59.8, max: 60.1, dec}, // 發電機3頻率Hz
   { objectId: "f9ad22d7-4657-408b-95db-08147c619ae7", min: 51, max: 60 }, // CO 感測器1
   { objectId: "1e243a9a-2bff-43c4-94fe-cf0205b12cb3", min: 20, max: 45 }, // CO 感測器2
