@@ -14,7 +14,10 @@ function randomIntFromInterval(min, max, dec) {
   // min and max included
   console.log(dec)
   if(dec){
-    return Math.floor((Math.random() * (max - min + 1) + min)*10)/10;
+    if ((max-min)==0){
+      return min
+    }
+    return Math.round((Math.random() * (max - min + 1) + min)*10)/10;
   }
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
