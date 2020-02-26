@@ -183,7 +183,7 @@ var createAttributes = () => {
 
   setInterval(function () {
     createAttribute(changeArray);
-  }, 1000);
+  }, 10000);
 }
 
 module.exports = createAttributes
