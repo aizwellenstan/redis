@@ -75,7 +75,7 @@ var hisSave_1 = require("./hisSave");
                 ("http://localhost:" + config_1.BIND_PORT + "/graphql"));
         });
         setInterval(function () { hisSave_1.initialdata(); }, 1000);
-        setInterval(function () { hisSave_1.savedata(); }, 1000);
+        setInterval(function () { hisSave_1.savedata(); }, 5000);
         return [2 /*return*/];
     });
 }); })();

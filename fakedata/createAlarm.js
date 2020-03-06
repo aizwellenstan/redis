@@ -31,10 +31,10 @@ var fakeAlarm = {
       AlarmFunction: "AlarmNoAckNoReset",
       TriggerLogic: "=",
       trigger_value: "0",
-      AlarmMessage: "冷卻馬達-2停止中",
-      AlarmMessageEnglish: "冷卻馬達-2停止中",
-      AlarmMessageSpanish: "冷卻馬達-2停止中",
-      AlarmMessageJapenese: "冷卻馬達-2停止中",
+      AlarmMessage: "冷卻馬達-1停止中",
+      AlarmMessageEnglish: "冷卻馬達-1停止中",
+      AlarmMessageSpanish: "冷卻馬達-1停止中",
+      AlarmMessageJapenese: "冷卻馬達-1停止中",
       IsOpenTrigger: "1"
     },
     // {
@@ -74,6 +74,175 @@ var fakeAlarm = {
       AlarmMessageEnglish: "冷卻馬達-1故障跳脫",
       AlarmMessageSpanish: "冷卻馬達-1故障跳脫",
       AlarmMessageJapenese: "冷卻馬達-1故障跳脫",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c",
+      DisplayObjectId: "9cac0a7a-5cf5-4685-b004-6056b022b49e", //冷卻水泵02 
+      AlarmCategory: "Low",
+      AlarmFunction: "AlarmNoAckNoReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "冷卻馬達-2停止中",
+      AlarmMessageEnglish: "冷卻馬達-2停止中",
+      AlarmMessageSpanish: "冷卻馬達-2停止中",
+      AlarmMessageJapenese: "冷卻馬達-2停止中",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "db3c6401-faff-4a7c-99b7-b2903980a098",
+      DisplayObjectId: "9cac0a7a-5cf5-4685-b004-6056b022b49e", //冷卻水泵02 
+      AlarmCategory: "High",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "1",
+      AlarmMessage: "冷卻馬達-2故障跳脫",
+      AlarmMessageEnglish: "冷卻馬達-2故障跳脫",
+      AlarmMessageSpanish: "冷卻馬達-2故障跳脫",
+      AlarmMessageJapenese: "冷卻馬達-2故障跳脫",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "5c951e24-69ea-4611-91fc-28e7a3239d9c",
+      DisplayObjectId: "e4e9a314-0c9e-47eb-acff-c15dca018304", //冷卻水泵03 
+      AlarmCategory: "Low",
+      AlarmFunction: "AlarmNoAckNoReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "冷卻馬達-3停止中",
+      AlarmMessageEnglish: "冷卻馬達-3停止中",
+      AlarmMessageSpanish: "冷卻馬達-3停止中",
+      AlarmMessageJapenese: "冷卻馬達-3停止中",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "ae4a5ad7-3cc2-4057-b27e-d71cab3aab0c",
+      DisplayObjectId: "e4e9a314-0c9e-47eb-acff-c15dca018304", //冷卻水泵03 
+      AlarmCategory: "High",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "1",
+      AlarmMessage: "冷卻馬達-3故障跳脫",
+      AlarmMessageEnglish: "冷卻馬達-3故障跳脫",
+      AlarmMessageSpanish: "冷卻馬達-3故障跳脫",
+      AlarmMessageJapenese: "冷卻馬達-3故障跳脫",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "cefb7be2-4c60-41fb-b377-084001383493",
+      DisplayObjectId: "e23f6833-9e69-46b6-8f9b-33ba5a430b34", //冰水主機01	
+      AlarmCategory: "Low",
+      AlarmFunction: "AlarmNoAckNoReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "冰水主機-1停止中",
+      AlarmMessageEnglish: "冰水主機-1停止中",
+      AlarmMessageSpanish: "冰水主機-1停止中",
+      AlarmMessageJapenese: "冰水主機-1停止中",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "c4329169-3679-4f93-a695-8ed34f36f28d",
+      DisplayObjectId: "e23f6833-9e69-46b6-8f9b-33ba5a430b34", //冰水主機01	 
+      AlarmCategory: "Emergency",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "1",
+      AlarmMessage: "冰水主機-1故障跳脫",
+      AlarmMessageEnglish: "冰水主機-1故障跳脫",
+      AlarmMessageSpanish: "冰水主機-1故障跳脫",
+      AlarmMessageJapenese: "冰水主機-1故障跳脫",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "817c6b44-d048-43d9-b5c4-bfc13c1ad513",
+      DisplayObjectId: "7d6f9f6c-2af3-453e-a501-a82206995a42", //冰水主機02
+      AlarmCategory: "Low",
+      AlarmFunction: "AlarmNoAckNoReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "冰水主機-2停止中",
+      AlarmMessageEnglish: "冰水主機-2停止中",
+      AlarmMessageSpanish: "冰水主機-2停止中",
+      AlarmMessageJapenese: "冰水主機-2停止中",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "ca4b7e86-26ff-43e2-b8b3-6f744103c5d9",
+      DisplayObjectId: "7d6f9f6c-2af3-453e-a501-a82206995a42", //冰水主機02 
+      AlarmCategory: "Emergency",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "1",
+      AlarmMessage: "冰水主機-2故障跳脫",
+      AlarmMessageEnglish: "冰水主機-2故障跳脫",
+      AlarmMessageSpanish: "冰水主機-2故障跳脫",
+      AlarmMessageJapenese: "冰水主機-2故障跳脫",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "f4395f51-116d-4d38-a04d-5e432d07a5cf",
+      DisplayObjectId: "5c1993da-aa47-4706-a2d4-6a83c2e9e2ec", //風管01
+      AlarmCategory: "High",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "1",
+      AlarmMessage: "風機過載跳脫",
+      AlarmMessageEnglish: "風機過載跳脫",
+      AlarmMessageSpanish: "風機過載跳脫",
+      AlarmMessageJapenese: "風機過載跳脫",
+      IsOpenTrigger: "1"
+    },
+    // {
+    //   objectId: "857e57da-dc8e-4793-8984-0b0d23815b34",
+    //   DisplayObjectId: "5c1993da-aa47-4706-a2d4-6a83c2e9e2ec",
+    //   AlarmCategory: "High",
+    //   AlarmFunction: "AlarmNeedAckNeedReset",
+    //   TriggerLogic: "=",
+    //   trigger_value: "1",
+    //   AlarmMessage: "風機過載跳脫",
+    //   AlarmMessageEnglish: "風機過載跳脫",
+    //   AlarmMessageSpanish: "風機過載跳脫",
+    //   AlarmMessageJapenese: "風機過載跳脫",
+    //   IsOpenTrigger: "0"
+    // },
+    {
+      objectId: "853b9151-a4aa-4f00-861c-b5a1b46cce6f",
+      DisplayObjectId: "5bc13f9e-2c38-4a16-a14a-cf23791ecd2c", //風管02
+      AlarmCategory: "High",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "1",
+      AlarmMessage: "風機過載跳脫",
+      AlarmMessageEnglish: "風機過載跳脫",
+      AlarmMessageSpanish: "風機過載跳脫",
+      AlarmMessageJapenese: "風機過載跳脫",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "f71e85ee-728f-4224-beae-3c14ffb3bcda",
+      DisplayObjectId: "a8685f65-8ff6-47a5-a888-c5c4ce5e3998", //電箱01
+      AlarmCategory: "Emergency",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "ACBB1-跳脫狀態01",
+      AlarmMessageEnglish: "ACBB1-跳脫狀態01",
+      AlarmMessageSpanish: "ACBB1-跳脫狀態01",
+      AlarmMessageJapenese: "ACBB1-跳脫狀態01",
+      IsOpenTrigger: "1"
+    },
+    {
+      objectId: "ad0b8d4f-f212-4dfc-9fa0-e8326ed2444f",
+      DisplayObjectId: "a8685f65-8ff6-47a5-a888-c5c4ce5e3998", //電箱01
+      AlarmCategory: "Emergency",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "ACBB1-啟停狀態01",
+      AlarmMessageEnglish: "ACBB1-啟停狀態01",
+      AlarmMessageSpanish: "ACBB1-啟停狀態01",
+      AlarmMessageJapenese: "ACBB1-啟停狀態01",
       IsOpenTrigger: "1"
     },
   ]

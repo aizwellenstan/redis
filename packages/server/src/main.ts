@@ -72,5 +72,5 @@ import { initialdata, savedata } from "./hisSave"
   });
 
   setInterval(function () { initialdata() }, 1000)
-  setInterval(function () { savedata() }, 1000)
+  setInterval(function () { savedata() }, 5000)
 })();

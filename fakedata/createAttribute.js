@@ -76,18 +76,18 @@ nocahngeArray = [
   { objectId: "b48ddf73-c31d-4731-8047-83ad40e73464", min: 0, max: 0, dec: false },
   { objectId: "8b13dfea-a7fb-4404-88a5-b58f5a3e5822", min: 1, max: 1, dec: false },
   { objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c", min: 1, max: 1, dec: false },
-  { objectId: "52c5852c-885e-46e5-a555-fe585fdc8f9c", min: 1, max: 1, dec: false },
   { objectId: "5c951e24-69ea-4611-91fc-28e7a3239d9c", min: 1, max: 1, dec: false },
+  { objectId: "ae4a5ad7-3cc2-4057-b27e-d71cab3aab0c", min: 0, max: 0, dec: false },
   { objectId: "ae4a5ad7-3cc2-4057-b27e-d71cab3aab0c", min: 1, max: 1, dec: false },
   { objectId: "cefb7be2-4c60-41fb-b377-084001383493", min: 1, max: 1, dec: false },
-  { objectId: "c4329169-3679-4f93-a695-8ed34f36f28d", min: 1, max: 1, dec: false },
+  { objectId: "c4329169-3679-4f93-a695-8ed34f36f28d", min: 0, max: 0, dec: false },
   { objectId: "817c6b44-d048-43d9-b5c4-bfc13c1ad513", min: 1, max: 1, dec: false },
-  { objectId: "ca4b7e86-26ff-43e2-b8b3-6f744103c5d9", min: 1, max: 1, dec: false},
+  { objectId: "ca4b7e86-26ff-43e2-b8b3-6f744103c5d9", min: 0, max: 0, dec: false},
   { objectId: "90af7071-c367-456b-a13d-5f04307be6a0", min: 1, max: 1, dec: false },
   { objectId: "9ae8cf48-e9c8-4f27-bb2e-1451fc4c4e55", min: 1, max: 1, dec: false },
   { objectId: "41a6bad6-1b99-4752-ae67-75f77b4d900e", min: 1, max: 1, dec: false },
   { objectId: "f27cb6c3-f631-4f82-a23e-a21f18495fdb", min: 1, max: 1, dec: false },
-  { objectId: "f4395f51-116d-4d38-a04d-5e432d07a5cf", min: 1, max: 1, dec: false },
+  { objectId: "f4395f51-116d-4d38-a04d-5e432d07a5cf", min: 0, max: 0, dec: false },
   { objectId: "74dab691-b48b-44d8-9675-7d5b01ca714e", min: 1, max: 1, dec: false },
   { objectId: "17e73d9a-def8-4989-b3f5-6632a57825f1", min: 1, max: 1, dec: false },
   { objectId: "857e57da-dc8e-4793-8984-0b0d23815b34", min: 1, max: 1, dec: false },
@@ -95,7 +95,7 @@ nocahngeArray = [
   { objectId: "9cf253ae-c663-47fa-996a-840cf96595ce", min: 1, max: 1, dec: false },
   { objectId: "45efca7a-5dd3-46b6-9d43-52b664336304", min: 1, max: 1, dec: false },
   { objectId: "b7e0cb71-31a7-4888-9551-e9ae99f1871c", min: 1, max: 1, dec: false },
-  { objectId: "853b9151-a4aa-4f00-861c-b5a1b46cce6f", min: 1, max: 1, dec: false },
+  { objectId: "853b9151-a4aa-4f00-861c-b5a1b46cce6f", min: 0, max: 0, dec: false },
   { objectId: "b9e4cc5e-ec88-4eb8-aedc-1e59107b81b1", min: 1, max: 1, dec: false },
   { objectId: "411dfc0e-e8ec-48cd-85fe-890155e466af", min: 1, max: 1, dec: false },
   { objectId: "e8331740-b9b3-48bd-9599-33553c05ce85", min: 1, max: 1, dec: false },
@@ -103,18 +103,18 @@ nocahngeArray = [
   { objectId: "f71e85ee-728f-4224-beae-3c14ffb3bcda", min: 1, max: 1, dec: false },
   { objectId: "ad0b8d4f-f212-4dfc-9fa0-e8326ed2444f", min: 0, max: 0, dec: false },
   { objectId: "f7c457be-eaf3-46e5-8f80-1978771192e8", min: 1, max: 1, dec: false },
-  { objectId: "951da7c3-5b23-4af3-887f-7480ed53e87c", min: 1, max: 1, dec: false },
+  { objectId: "951da7c3-5b23-4af3-887f-7480ed53e87c", min: 0, max: 0, dec: false },
   { objectId: "2483c978-000b-497f-8cce-595ba00effb7", min: 1, max: 1, dec: false },
   { objectId: "963c61a1-e1e6-4028-9142-8160e0534dd0", min: 1, max: 1, dec: false },
   { objectId: "85d74bab-753e-4e21-a895-84af4bf9f493", min: 1, max: 1, dec: false },
   { objectId: "573b917e-e282-47a9-a2c9-33b9616aed98", min: 1, max: 1, dec: false },
-  { objectId: "9d7387e2-5694-4fbe-99ea-d7e4381b5f44", min: 1, max: 1, dec: false },
+  { objectId: "9d7387e2-5694-4fbe-99ea-d7e4381b5f44", min: 0, max: 0, dec: false },
   { objectId: "8a649c92-ad15-4c11-a05a-e49d98e49ae5", min: 1, max: 1, dec: false },
   { objectId: "399b8447-7977-43a7-bc32-708f8dd2337b", min: 1, max: 1, dec: false },
-  { objectId: "2a8065d9-d967-48c3-80c6-ffc178985691", min: 1, max: 1, dec: false },
+  { objectId: "2a8065d9-d967-48c3-80c6-ffc178985691", min: 0, max: 0, dec: false },
   { objectId: "79904457-a1fa-48b8-81c4-76f68b17eaab", min: 1, max: 1, dec: false },
-  { objectId: "05509524-a1dd-48b6-8cea-e00b57eff5de", min: 1, max: 1, dec: false },
-  { objectId: "f6698ca0-0a92-434c-8eef-ac2581025441", min: 1, max: 1, dec: false },
+  { objectId: "05509524-a1dd-48b6-8cea-e00b57eff5de", min: 0, max: 0, dec: false },
+  { objectId: "f6698ca0-0a92-434c-8eef-ac2581025441", min: 0, max: 0, dec: false },
 ]
 
 changeArray = [
@@ -148,14 +148,14 @@ changeArray = [
   { objectId: "2d66338e-6eb3-492e-8cf9-fa61836ead48", min: 21, max: 42, dec: false }, // 回風溫度值
   { objectId: "2c318c8b-77cd-4cbf-948c-941f15ef2e08", min: 65, max: 65, dec: false }, // 回風濕度值
   { objectId: "015951a5-116a-4f00-ab52-af4f7cf30ab4", min: 28, max: 28, dec: false }, // 回風溫度值
-  { objectId: "28c77277-4989-46cc-8bc2-d4b3eef8f615", min: 20, max: 100, dec: false }, // 回風濕度值
+  { objectId: "28c77277-4989-46cc-8bc2-d4b3eef8f615", min: 65, max: 65, dec: false }, // 回風濕度值
   { objectId: "53402a68-06cd-43d7-b07d-b90844ed6f49", min: 219.6, max: 220.4, dec: true }, // ACBB1電表電壓V1
   { objectId: "d2825cd1-8f53-4d9b-9090-689294c73d32", min: 219.6, max: 220.4, dec: true }, // ACBB1電表電壓V2
   { objectId: "cbace30c-50c2-47fa-8a67-d5501726663c", min: 219.6, max: 220.4, dec: true }, // ACBB1電表電壓V3
   { objectId: "88cb061c-5ffc-42dd-a59a-a3063b86af7f", min: 0.3, max: 0.5, dec: true }, // ACBB1電表電流I1
   { objectId: "e90df963-e309-4981-b254-53f24a24d549", min: 0.3, max: 0.5, dec: true }, // ACBB1電表電流I2
   { objectId: "2981dd6d-6f75-496a-a9e6-374d493bbd31", min: 0.3, max: 0.5, dec: true }, // ACBB1電表電流I3
-  { objectId: "fd4760e1-3912-48d1-88bf-3e4f17455613", min: 0.8, max: 1.1, dec: true }, // ACBB1電表電功率KW
+  { objectId: "fd4760e1-3912-48d1-88bf-3e4f17455613", min: 0.9, max: 1.1, dec: true }, // ACBB1電表電功率KW
   { objectId: "8b3712c9-eec3-4cf1-bea4-3868c7ae17e5", min: 0.8, max: 0.8, dec: true }, // ACBB1電表功因Pf
   { objectId: "843d7623-488a-4d93-a8b5-b13faf8ab813", min: 59.8, max: 60.1, dec: true }, // ACBB1電表頻率Hz
   { objectId: "f74346d5-3061-4269-9059-5cd3dd37a055", min: 219.6, max: 220.4, dec: true }, // ACBB2電表電壓V1
