@@ -245,6 +245,19 @@ var fakeAlarm = {
       AlarmMessageJapenese: "ACBB1-啟停狀態01",
       IsOpenTrigger: "1"
     },
+    {
+      objectId: "hvac001",
+      DisplayObjectId: "hvac001", //for louis demo
+      AlarmCategory: "Emergency",
+      AlarmFunction: "AlarmNeedAckNeedReset",
+      TriggerLogic: "=",
+      trigger_value: "0",
+      AlarmMessage: "hvac faiure",
+      AlarmMessageEnglish: "hvac faiure",
+      AlarmMessageSpanish: "hvac faiure",
+      AlarmMessageJapenese: "hvac faiure",
+      IsOpenTrigger: "1"
+    },
   ]
 };
 

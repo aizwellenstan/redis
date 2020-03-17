@@ -118,7 +118,7 @@ nocahngeArray = [
 ]
 
 changeArray = [
-  { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 15, max: 15, dec: false }, // 冷卻水塔-1回水溫度
+  // { objectId: "11d78abd-d74a-458d-a77d-4afecbe25197", min: 15, max: 15, dec: false }, // 冷卻水塔-1回水溫度
   { objectId: "be3d2034-9116-453b-b76f-fdcad1e11125", min: 15, max: 30, dec: false }, // 冷卻水塔模組1-外氣溫度
   { objectId: "1036c4fb-da99-405a-8240-18f274011c63", min: 45, max: 90, dec: false }, // 冷卻水塔模組1-外氣濕度
   { objectId: "474308ae-c944-448c-9b3a-51b1c2694b35", min: 18.75, max: 37.5, dec: true }, // 冷卻水塔模組1-外氣露點
